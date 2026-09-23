@@ -606,5 +606,1237 @@
     "subject": "General",
     "chunk_index": 0,
     "token_count": 194
+  },
+  {
+    "text": "Unit-V – Clustering \n1.Introduction to Clustering \nThe process of making a group of abstract objects into classes of similar objects is \nknown as clustering. Clustering in data mining is an unsupervised learning technique that partitions a \ndataset into groups (clusters) of similar objects, maximizing intra-cluster similarity \nand minimizing inter-cluster similarity. It identifies hidden patterns or structures in \nunlabelled data, commonly used for customer segmentation, image processing, and \nanomaly detection. How it Works \nThe goal is to ensure that items within the same cluster are as similar as possible, \nwhile items in different clusters are as distinct as possible. Common Types \nCentroid-based (e.g., K-Means): Groups data around central points. You usually \nhave to tell it how many clusters (k).  \nDensity-based (e.g., DBSCAN): Finds clusters based on how \"crowded\" an area is. Great for identifying outliers or non-linear shapes.  \nHierarchical: Creates a tree of clusters (a dendrogram), either by merging small \ngroups or splitting large ones.  \nDistribution-based: Assumes data follows a specific statistical probability, like a \nGaussian distribution.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 1,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 247
+  },
+  {
+    "text": " \nDistribution-based: Assumes data follows a specific statistical probability, like a \nGaussian distribution. Applications \n \n Marketing: Segmenting customers into personas based on buying habits.  \nBiology: Grouping genes or plant species with similar traits.  \nSecurity: Detecting \"weird\" behavior (outliers) that might indicate credit card fraud.  \nImage Processing: Compressing images by grouping similar pixel colors together.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 1,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 94
+  },
+  {
+    "text": "2. Cluster analysis \nCluster analysis (clustering) groups similar data points so that items within \nthe same cluster are more alike than those in different clusters. It is widely \nused in e-commerce for customer segmentation to enable personalized \nrecommendations and improved user experiences. Cluster analysis is useful for: \n Scalability depends on the algorithm, some methods like k-means scale \nwell, while others (e.g., hierarchical clustering) do not.  Works effectively with high-dimensional data.  Supports numerical data as well as categorical data.  Most clustering algorithms are sensitive to noise and require \npreprocessing; missing data must be handled before clustering.  Produces results that are easy to interpret and apply in real world \nscenarios. Distance Metrics in Cluster Analysis \nDistance metrics are simple mathematical formulas to figure out how similar \nor different two data points are. Type of distance metrics we choose plays a \nbig role in deciding clustering results. Some of the common metrics are: \n Euclidean Distance: It is the most widely used distance metric and finds \nthe straight-line distance between two points.  Manhattan Distance: It measures the distance between two points \nbased on grid-like path.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 247
+  },
+  {
+    "text": " Manhattan Distance: It measures the distance between two points \nbased on grid-like path. It adds the absolute differences between the \nvalues.  Cosine Similarity: This method checks the angle between two points \ninstead of looking at the distance. It’s used in text data to see how similar \ntwo documents are.  Jaccard Index: A statistical tool used for comparing the similarity of \nsample sets. It’s mostly used for yes/no type data or categories.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 99
+  },
+  {
+    "text": "Types of Clustering Techniques \nClustering can be broadly classified into several methods. The choice of \nmethod depends on the type of data and the problem you're solving. 1. Partitioning Methods \n Partitioning Methods divide the data into k groups (clusters) where each \ndata point belongs to only one group. These methods are used when you \nalready know how many clusters you want to create. A common example \nis K-means clustering.  K-means clustering assigns each data point to the nearest center and \nrepeatedly updates the centers as the mean of assigned points until they \nstabilize. 2. Hierarchical Methods \nHierarchical clustering builds a tree-like structure of clusters known as a \ndendrogram that represents the merging or splitting of clusters. It can be \ndivided into: \n Agglomerative Approach (Bottom-up): Agglomerative Approach starts \nwith individual points and merges similar ones. Like a family tree where \nrelatives are grouped step by step.  Divisive Approach (Top-down): It starts with one big cluster and splits \nit repeatedly into smaller clusters.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 3,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 233
+  },
+  {
+    "text": "Like a family tree where \nrelatives are grouped step by step.  Divisive Approach (Top-down): It starts with one big cluster and splits \nit repeatedly into smaller clusters. For example, classifying animals into \nbroad categories like mammals, reptiles, etc and further refining them. 3. Density-Based Methods \n Density-based clustering group data points that are densely packed \ntogether and treat regions with fewer data points as noise or outliers. This \nmethod is particularly useful when clusters are irregular in shape.  For example, it can be used in fraud detection as it identifies unusual \npatterns of activity by grouping similar behaviors together. 4. Grid-Based Methods \n Grid-Based Methods divide data space into grids making clustering \nefficient. This makes the clustering process faster because it reduces the \ncomplexity by limiting the number of calculations needed and is useful for \nlarge datasets.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 3,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 185
+  },
+  {
+    "text": " Climate researchers often use grid-based methods to analyze \ntemperature variations across different geographical regions. By dividing \nthe area into grids they can more easily identify temperature patterns and \ntrends. 5. Model-Based Methods \n Model-based clustering groups data by assuming it comes from a mix of \ndistributions. Gaussian Mixture Models (GMM) are commonly used and \nassume the data is formed by several overlapping normal distributions.  GMM is commonly used in voice recognition systems as it helps to \ndistinguish different speakers by modeling each speaker’s voice as a \nGaussian distribution. 6. Constraint-Based Methods \n It uses User-defined constraints to guide the clustering process. These \nconstraints may specify certain relationships between data points such as \nwhich points should or should not be in the same cluster.  In healthcare, clustering groups patients based on genetic similarities \nwhile also incorporating lifestyle factors to create more accurate and \nmeaningful clusters. 3.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 4,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 197
+  },
+  {
+    "text": " In healthcare, clustering groups patients based on genetic similarities \nwhile also incorporating lifestyle factors to create more accurate and \nmeaningful clusters. 3. types of data in cluster analysis \n \nCluster analysis in data mining handles various data types to group similar objects, \nprimarily categorized into interval-scaled (continuous), binary (0/1), nominal \n(categorical), ordinal (ranked), ratio-scaled, and mixed-type variables. Selecting the \nappropriate distance metric (e.g., Euclidean or Manhattan) is essential to effectively \ncalculate similarity across these different data types. Here are the main types you’ll encounter: \n1. Interval-Scaled Variables \nThese are continuous numerical values where the distance between points is \nconsistent (e.g., weight, height, or temperature).  \nHandling: Usually standardized (like Z-score) so one large-scale variable doesn’t \ndominate the others. 2. Binary Variables \nVariables with only two states: 0 or 1, Yes or No.  \nSymmetric: Both states are equally important (e.g., Gender).",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 4,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 222
+  },
+  {
+    "text": " \nAsymmetric: One state is more important than the other (e.g., a positive result in a \nrare disease test). 3. Categorical (Nominal) Variables \nVariables with more than two states but no inherent order (e.g., hair colour: black, \nbrown, blond).  \nHandling: Often handled by counting \"matches\" or converted into multiple binary \nvariables. 4. Ordinal Variables \nVariables with a meaningful order, but the \"distance\" between ranks isn't defined \n(e.g., survey ratings like Poor, Fair, Good, Excellent).  \nHandling: Usually mapped to ranks (1, 2, 3...) and then treated like interval data. 5. Ratio-Scaled Variables \nPositive measurements on an exponential scale (e.g., bacterial growth or wealth).  \nHandling: Often transformed using Logarithms to make the distribution more linear \nbefore clustering. 6. Mixed Types \nIn the real world, datasets usually contain a mix of the above.  \nHandling: Use Gower’s Similarity Coefficient, which can combine different data \ntypes into a single similarity matrix.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 5,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 238
+  },
+  {
+    "text": "4. Partitioning Methods: \nPartitioning Method: This clustering method classifies the information into \nmultiple groups based on the characteristics and similarity of the data. Its the \ndata analysts to specify the number of clusters that has to be generated for \nthe clustering methods. In the partitioning method when database(D) that \ncontains multiple(N) objects then the partitioning method constructs user-\nspecified(K) partitions of the data in which each partition represents a cluster \nand a particular region. There are many algorithms that come under \npartitioning method some of the popular ones are K-Mean, PAM(K-Medoids), \nCLARA algorithm (Clustering Large Applications) etc. In this article, we will \nbe seeing the working of K Mean algorithm in detail. 4.1 K-Mean (A centroid based Technique): The K means algorithm takes \nthe input parameter K from the user and partitions the dataset containing N \nobjects into K clusters so that resulting similarity among the data objects \ninside the group (intracluster) is high but the similarity of data objects with \nthe data objects from outside the cluster is low (intercluster). The similarity \nof the cluster is determined with respect to the mean value of the cluster.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 6,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 251
+  },
+  {
+    "text": "The similarity \nof the cluster is determined with respect to the mean value of the cluster. It \nis a type of square error algorithm. At the start randomly k objects from the \ndataset are chosen in which each of the objects represents a cluster \nmean(centre). For the rest of the data objects, they are assigned to the \nnearest cluster based on their distance from the cluster mean. The new \nmean of each of the cluster is then calculated with the added data objects. Algorithm: \nK mean: \nInput: \nK: The number of clusters in which the dataset has to be \ndivided \nD: A dataset containing N number of objects \n \nOutput:  \nA dataset of K clusters  \nMethod: \n1. Randomly assign K objects from the dataset(D) as cluster centres(C) \n2. (Re) Assign each object to which object is most similar based upon \nmean values. 3. Update Cluster means, i.e., Recalculate the mean of each cluster with \nthe updated values. 4. Repeat Step 2 until no change occurs.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 6,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 219
+  },
+  {
+    "text": "Example: Suppose we want to group the visitors to a website using just \ntheir age as follows: \n16, 16, 17, 20, 20, 21, 21, 22, 23, 29, 36, 41, 42, 43, 44, \n45, 61, 62, 66  \nInitial Cluster: \nK=2 \nCentroid(C1) = 16 [16]  \nCentroid(C2) = 22 [22]  \nNote: These two points are chosen randomly from the dataset. Iteration-1:",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 7,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 126
+  },
+  {
+    "text": "C1 = 16.33 [16, 16, 17] \nC2 = 37.25 [20, 20, 21, 21, 22, 23, 29, 36, 41, 42, 43, 44, \n45, 61, 62, 66]  \nIteration-2: \nC1 = 19.55 [16, 16, 17, 20, 20, 21, 21, 22, 23] \nC2 = 46.90 [29, 36, 41, 42, 43, 44, 45, 61, 62, 66]  \nIteration-3: \nC1 = 20.50 [16, 16, 17, 20, 20, 21, 21, 22, 23, 29] \nC2 = 48.89 [36, 41, 42, 43, 44, 45, 61, 62, 66]  \nIteration-4: \nC1 = 20.50 [16, 16, 17, 20, 20, 21, 21, 22, 23, 29] \nC2 = 48.89 [36, 41, 42, 43, 44, 45, 61, 62, 66]  \nNo change Between Iteration 3 and 4, so we stop.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 8,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 322
+  },
+  {
+    "text": "Therefore we get the \nclusters (16-29) and (36-66) as 2 clusters we get using K Mean Algorithm. 4.2 K-Medoids Clustering \nK-medoids clustering is a partitioning algorithm that groups data points into k clusters. Unlike K-means, which uses artificial centroids (means), K-medoids selects actual \ndata points from the dataset as cluster centers, known as medoids. Core Algorithm: Partitioning Around Medoids (PAM) \nThe most common implementation of K-medoids is the PAM algorithm, which \nfollows these steps:  \n1. Initialize: Randomly select k data points to serve as the initial medoids. 2. Associate: Assign each remaining data point to the cluster of its nearest medoid \nbased on a distance metric, commonly Manhattan distance. 3. Cost Calculation: Sum the distances from all points to their assigned medoid to find \nthe total \"cost\". 4. Swap & Re-evaluate:",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 8,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 204
+  },
+  {
+    "text": "1. Randomly pick a non-medoid point and swap it with a current medoid. 2. Recalculate the total cost for the new configuration. 3. If the new cost is lower, keep the swap; if not, undo it. 5. Repeat: Continue swapping until the medoids no longer change, indicating the cost \nis minimized.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 9,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 74
+  },
+  {
+    "text": "Applications: K-medoids is widely used for customer segmentation, fraud detection, and \nbiological data clustering where outliers are common. 5. Hierarchical Clustering \n \nA Hierarchical clustering method works via grouping data into a tree of \nclusters. Hierarchical clustering begins by treating every data point as a \nseparate cluster. Then, it repeatedly executes the subsequent steps: \n1. Identify the 2 clusters which can be closest together, and \n2. Merge the 2 maximum comparable clusters. We need to continue these \nsteps until all the clusters are merged together. Hierarchical clustering has several advantages over other clustering \nmethods \n The ability to handle non-convex clusters and clusters of different sizes \nand densities.  The ability to handle missing data and noisy data.  The ability to reveal the hierarchical structure of the data, which can be \nuseful for understanding the relationships among the clusters. Drawbacks of Hierarchical Clustering \n The need for a criterion to stop the clustering process and determine the \nfinal number of clusters.  The computational cost and memory requirements of the method can be \nhigh, especially for large datasets.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 10,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 237
+  },
+  {
+    "text": " The computational cost and memory requirements of the method can be \nhigh, especially for large datasets.  The results can be sensitive to the initial conditions, linkage criterion, and \ndistance \nmetric \nused. In summary, Hierarchical clustering is a method of data mining that \ngroups similar data points into clusters by creating a hierarchical structure \nof the clusters.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 10,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 74
+  },
+  {
+    "text": " This method can handle different types of data and reveal the \nrelationships among the clusters. However, it can have high \ncomputational cost and results can be sensitive to some conditions. Types of Hierarchical Clustering \nBasically, there are two types of hierarchical Clustering: \n1. Agglomerative (Bottom-Up): This is the most common. Start with each data point \nas its own cluster and merge the closest pairs until only one cluster remains. 2. Divisive (Top-Down): Start with all points in one giant cluster and recursively split \nthem until each point is its own cluster. 1. Agglomerative Clustering \nInitially consider every data point as an individual Cluster and at every step, \nmerge the nearest pairs of the cluster. (It is a bottom-up method). At first, \nevery dataset is considered an individual entity or cluster. At every iteration, \nthe clusters merge with different clusters until one cluster is formed.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 11,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 196
+  },
+  {
+    "text": "(It is a bottom-up method). At first, \nevery dataset is considered an individual entity or cluster. At every iteration, \nthe clusters merge with different clusters until one cluster is formed. The algorithm for Agglomerative Hierarchical Clustering is: \n Calculate the similarity of one cluster with all the other clusters (calculate \nproximity matrix) \n Consider every data point as an individual cluster \n Merge the clusters which are highly similar or close to each other.  Recalculate the proximity matrix for each cluster \n Repeat Steps 3 and 4 until only a single cluster remains. the graphical representation of this algorithm using a dendrogram. Let's say we have six data points A, B, C, D, E, and F.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 11,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 157
+  },
+  {
+    "text": " Step-1: Consider each alphabet as a single cluster and calculate the \ndistance of one cluster from all the other clusters.  Step-2: In the second step comparable clusters are merged together to \nform a single cluster. Let's say cluster (B) and cluster (C) are very similar \nto each other therefore we merge them in the second step similarly to \ncluster (D) and (E) and at last, we get the clusters [(A), (BC), (DE), (F)] \n Step-3: We recalculate the proximity according to the algorithm and \nmerge the two nearest clusters([(DE), (F)]) together to form new clusters \nas [(A), (BC), (DEF)] \n Step-4: Repeating the same process; The clusters DEF and BC are \ncomparable and merged together to form a new cluster. We’re now left \nwith clusters [(A), (BCDEF)].  Step-5: At last, the two remaining clusters are merged together to form a \nsingle cluster [(ABCDEF)].",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 12,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 223
+  },
+  {
+    "text": "2. Divisive Hierarchical clustering \nWe can say that Divisive Hierarchical clustering is precisely the opposite of \nAgglomerative Hierarchical clustering. In Divisive Hierarchical clustering, we \ntake into account all of the data points as a single cluster and in every \niteration, we separate the data points from the clusters which aren't \ncomparable. In the end, we are left with N clusters.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 13,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 86
+  },
+  {
+    "text": "Real-World Applications of Divisive Clustering \n1. Biological Taxonomy: Divisive clustering is used in biology to sort living things \nfrom broad to specific categories. For example, start with \"Animals\", then split into \n\"Mammals\", then into \"Primates\" and finally into specific species like \"Humans\". 2. Product Categorization in E-commerce: Online shopping websites organize \nproducts using a top-down category structure. 3. Document and Topic Classification: Large libraries or article databases use it to \narrange documents into main topics and detailed subtopics. Like articles on \n\"Science\" can be divided into \"Physics\", then into \"Quantum Mechanics\" and so \non. 4. Customer Segmentation in Marketing: Companies use it to group customers \nbased on their characteristics or buying behavior.For example, all customers are \ngrouped initially, then split into \"Frequent Buyers\", \"New Users\" and \"High \nSpenders\". 5. 5. Medical Diagnosis Systems: Doctors or AI systems use this method to narrow \ndown possible diseases from broad symptom categories.",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 14,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 228
+  },
+  {
+    "text": "5. 5. Medical Diagnosis Systems: Doctors or AI systems use this method to narrow \ndown possible diseases from broad symptom categories. Like from the symptom \n\"fever\", it may be split into \"viral\", then \"flu\" and then into specific flu types. Differences Between Agglomerative and Divisive Clustering:",
+    "source": "DW&DM-Unit-5.pdf",
+    "page": 14,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 68
+  },
+  {
+    "text": "DATA WAREHOUSING AND DATA MINING \nUNIT-I \n1.Introduction to Data warehouse  \n \nData warehousing is the process of collecting, integrating, storing and managing \ndata from multiple sources in a central repository. It enables organizations to \norganize large volumes of current and historical data for efficient querying, analysis \nand reporting. Note: The main goal of data warehousing is to support decision-making by providing \nclean, consistent and timely access to data. It ensures fast data retrieval even when \nworking with massive datasets. Need for Data Warehousing \n \nHandling Large Data Volumes: Traditional databases store limited data (MBs to \nGBs), while data warehouses are built to handle huge datasets (up to TBs), making \nit easier to store and analyze long-term historical data.  \nEnhanced Analytics: Databases handle transactions; data warehouses are \noptimized for complex analysis and historical insights.  \nCentralized Data Storage: A data warehouse combines data from multiple \nsources, giving a single, unified view for better decision-making.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 1,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 217
+  },
+  {
+    "text": " \nCentralized Data Storage: A data warehouse combines data from multiple \nsources, giving a single, unified view for better decision-making.  \nTrend Analysis: By storing historical data, a data warehouse allows businesses \nto analyze trends over time, enabling them to make strategic decisions based on \npast performance and predict future outcomes.  \nBusiness Intelligence Support: Data warehouses work with BI tools to give quick \naccess to insights, helping in data-driven decisions and improving efficiency. Components of Data Warehouse \n \nData Sources: These are the various operational systems, databases and external \ndata feeds that provide raw data to be stored in the warehouse.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 1,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 134
+  },
+  {
+    "text": " \nETL (Extract, Transform, Load) Process: The ETL process is responsible for \nextracting data from different sources, transforming it into a suitable format and \nloading it into the data warehouse.  \nData Warehouse Database: This is the central repository where cleaned and \ntransformed data is stored. It is typically organized in a multidimensional format for \nefficient querying and reporting.  \nMetadata: Metadata describes the structure, source and usage of data within the \nwarehouse, making it easier for users and systems to understand and work with \nthe data.  \nData Marts: These are smaller, more focused data repositories derived from the \ndata warehouse, designed to meet the needs of specific business departments or \nfunctions.  \nOLAP (Online Analytical Processing) Tools: OLAP tools allow users to analyze \ndata in multiple dimensions, providing deeper insights and supporting complex \nanalytical queries.  \nEnd-User Access Tools: These are reporting and analysis tools, such as \ndashboards or Business Intelligence (BI) tools, that enable business users to query \nthe data warehouse and generate reports.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 233
+  },
+  {
+    "text": "Types of Data Warehouses \nThe different types of Data Warehouses are: \n1. Enterprise Data Warehouse (EDW): A centralized warehouse that stores data \nfrom across the organization for analysis and reporting. 2. Operational Data Store (ODS): Stores real-time operational data used for day-to-\nday operations, not for deep analytics. 3. Data Mart: A subset of a data warehouse, focusing on a specific business area or \ndepartment. 4. Cloud Data Warehouse: A data warehouse hosted in the cloud, offering scalability \nand flexibility. 5. Big Data Warehouse: Designed to store vast amounts of unstructured and \nstructured data for big data analysis. 6. Virtual Data Warehouse: Provides access to data from multiple sources without \nphysically storing it. 7. Hybrid Data Warehouse: Combines on-premises and cloud-based storage to \noffer flexibility. 8. Real-time Data Warehouse: Designed to handle real-time data streaming and \nanalysis for immediate insights. Data Warehouse vs DBMS  \nDatabase \nData Warehouse \nA common Database is based \non operational or transactional \nprocessing. Each operation is an \nindivisible transaction. A data Warehouse is based on analytical \nprocessing.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 247
+  },
+  {
+    "text": "Each operation is an \nindivisible transaction. A data Warehouse is based on analytical \nprocessing. Generally, a Database stores \ncurrent and up-to-date data \nA Data Warehouse maintains historical data \nover time. Historical data is the data kept over",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 2,
+    "token_count": 50
+  },
+  {
+    "text": "Database \nData Warehouse \nwhich \nis \nused \nfor \ndaily \noperations. years and can used for trend analysis, make \nfuture predictions and decision support. A \ndatabase \nis \ngenerally \napplication specific. A Data Warehouse is integrated generally at the \norganization level, by combining data from \ndifferent databases \nExample: \nA database stores \nrelated data, such as the student \ndetails in a school. Example: A data warehouse integrates the data \nfrom one or more databases , so that analysis \ncan be done to get results , such as the best \nperforming school in a city. Constructing a Database is not \nso expensive. Constructing a Data Warehouse can be \nexpensive. Advantages and Disadvantages of Data Warehousing \nAdvantages \nDisadvantages \nBetter \nDecisions: \nCentralized \ndata supports faster, smarter \ndecisions. High Cost: Setup requires major investment. Business Intelligence: Enables \nstrong operational insights. Complexity: Needs skilled professionals to \nmanage. High \nData \nQuality: \nEnsures \nconsistency and reliability. Time-Consuming: Long setup and integration \ntime. Scalable: Handles large and \ngrowing datasets.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 3,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 244
+  },
+  {
+    "text": "High \nData \nQuality: \nEnsures \nconsistency and reliability. Time-Consuming: Long setup and integration \ntime. Scalable: Handles large and \ngrowing datasets. Integration Issues: Combining data from \nsources can be challenging. 2.Data warehouse architecture  \nData warehouse architecture is the structural blueprint for integrating data from diverse \nsources into a centralized, optimized repository for reporting and analysis. It commonly",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 3,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 84
+  },
+  {
+    "text": "employs a three-tier structure—source systems (data ingestion), staging/warehouse \n(cleansing and storage), and presentation (data marts/BI)—to support efficient query \nprocessing and decision-making. Layers of a Data Warehouse Architecture \n \nSource Layer \nThe source layer is where the different types of data from various sources such as \nCRM, ERP, or even spreadsheets are collected and subsequently sent to other \nlayers.  \nStaging Layer \nFrom the source layer, the data moves to the staging layer where it is temporarily \nstored, organized, and goes through several quality checks. This is popularly called \nthe Extract, Transform, and Load (ETL) process and is done to ensure the data \nprocessing is efficient.  \nWarehouse Layer \nThe warehouse layer or the core layer is where the processed data from the staging \nlayer is stored and optimized for analysis. This layer leverages a standardized data \nstructure to move the data into different tables.  \nPresentation Layer \nThe presentation layer (also known as the consumption layer) is where analysts and \nother users can access the data.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 4,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 230
+  },
+  {
+    "text": " \nPresentation Layer \nThe presentation layer (also known as the consumption layer) is where analysts and \nother users can access the data. It allows users to leverage queries and tools to \nextract insights, generate reports, and make informed decisions. This layer consists \nof data marts and data interfaces that present data related to a specific subject \narea to a particular group of users in the required format. Types of Data Warehouse Architecture \nData Warehouse Architectures come in three forms. Each architecture has its pros \nand cons, and the decision to choose the right architecture depends on the type or \nsize of the business. Here are the three data warehouse architectures:  \n1.Single-tier Data Warehouse Architecture \nA single-tier data warehouse architecture comes with the source layer, warehouse \nlayer, and analysis layer. Typically, it is used by small businesses looking to \nstore a limited amount of data and eliminate duplicate data. It may not help \nbusinesses that deal with massive volumes of data and that have advanced or real-\ntime \ndata \nprocessing requirements. Additionally, \nin \na \nsingle-\ntier architecture, analytical processing (e.g. Generating \na",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 4,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 232
+  },
+  {
+    "text": "report) and transactional processing (e.g. recording \npurchases \nmade \nby \na \ncustomer) happen together in the same system, which causes performance issues. 2. Two-tier Data Warehouse Architecture  \nThe two-tier architecture has a staging layer in addition to the source layer. The staging \nlayer temporarily stores data gathered from various sources for cleaning and \ntransforming it into a predefined format before ingesting it into the warehouse layer \nand subsequently into the analysis layer. In a two-tier architecture, a separation \nis established between analytical processing and transactional processing. While this \ndata warehouse architecture provides more value than a single-tier architecture, it \ncomes with scalability issues, making it unsuitable for large businesses.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 5,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 146
+  },
+  {
+    "text": "3. Three-tier Data Warehouse Architecture  \nData warehousing helps businesses make informed decisions using large datasets. The Three-Tier Architecture is widely used for its clear structure, dividing data \nprocessing into three layers for efficient access and management.  \nBottom Tier (Data Sources and Data Storage) \n \nMiddle Tier (OLAP Engine) \n \nTop Tier (Front-End Tools) \n \nBottom Tier \nBottom Tier is the foundation of the data warehouse, responsible for \ncollecting, processing and storing data from multiple sources. It plays a critical role in \npreparing data for analysis.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 6,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 122
+  },
+  {
+    "text": "Key Components: \n \nData Sources: Includes operational databases (OLTP systems), flat files, \nspreadsheets, external APIs, CRM/ERP systems and web logs. These are the raw \ninputs feeding into the data warehouse.  \nData Storage: Processed data is stored in a Relational Database Management \nSystem (RDBMS) or a multidimensional database designed to support structured \nquerying and analysis. ETL Process (Extract, Transform, Load) \nThis is the core function of the bottom tier: \n1. Extract: Gathers raw data from different, often incompatible sources. 2. Transform: Converts data into a consistent format, applying business rules, \ncleansing errors, handling missing values and resolving duplicates. 3. Load: Loads the transformed data into the warehouse, organizing it for fast access \nand analysis. Middle Tier \nThe Middle Tier hosts the OLAP server, which processes complex analytical queries. It acts as a bridge between the data storage layer (bottom tier) and the user interface \n(top tier), ensuring data is quickly retrieved, aggregated and ready for reporting and \nanalysis. It is designed for high-speed analytical processing.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 7,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 240
+  },
+  {
+    "text": "It is designed for high-speed analytical processing. OLAP server models \ncome in three different categories, including: \n \nROLAP (Relational OLAP):This model uses a relational database to store and \nmanage warehouse data. It is ideal for handling large data volumes as it operates \ndirectly on relational databases.  \nMOLAP (Multidimensional OLAP): This model stores data in a multidimensional \ncube. The \nstorage \nand \nretrieval \nprocesses \nare \nhighly \nefficient, \nmaking MOLAP suitable for complex analytical queries that require aggregation.  \nHOLAP (Hybrid OLAP): It is combination of relational and multidimensional online \nanalytical processing paradigms. HOLAP is the ideal option for a seamless \nfunctional flow across the database systems when the repository houses both the \nrelational database management system and the multidimensional database \nmanagement system. Top Tier \nThe Top Tier in the Three-Tier Data Warehouse Architecture comprises the front-end \nclient layer, which is essential for interacting with the data stored and processed in the \nlower tiers.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 7,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 229
+  },
+  {
+    "text": "Top Tier \nThe Top Tier in the Three-Tier Data Warehouse Architecture comprises the front-end \nclient layer, which is essential for interacting with the data stored and processed in the \nlower tiers. This layer includes a variety of business intelligence (BI) tools and \ntechniques designed to facilitate easy access and manipulation of data for reporting, \nanalysis, and decision-making. BI tools are critical components of the Top Tier, providing robust platforms through \nwhich users can query, report, and analyze data. Popular BI tools include:",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 7,
+    "subject": "General",
+    "chunk_index": 2,
+    "token_count": 105
+  },
+  {
+    "text": " \nIBM Cognos: Offers comprehensive reporting capabilities.  \nMicrosoft BI Platform: Integrates well with existing Microsoft products, providing \na familiar interface for users.  \nSAP BW: Specializes in managing large datasets and integrating with other SAP \nproducts.  \nCrystal Reports: Known for its powerful reporting features.  \nSAS Business Intelligence: Provides advanced analytics.  \nPentaho: A versatile tool for data integration and visualization. 3.Differences between OLAP and OLTP \n \nOLTP(Online Transaction Processing)  focuses on handling large numbers of \ntransactional operations in real time, ensuring data consistency and reliability for \ndaily business operations.  \nOLAP(Online Analytical Processing)  is designed for complex queries and data \nanalysis, enabling businesses to derive insights from vast datasets through \nmultidimensional analysis. Online Analytical Processing (OLAP) \nOnline Analytical Processing (OLAP) refers to software tools used for the \nanalysis of data in business decision-making processes.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 8,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 216
+  },
+  {
+    "text": "Online Analytical Processing (OLAP) \nOnline Analytical Processing (OLAP) refers to software tools used for the \nanalysis of data in business decision-making processes. OLAP systems \ngenerally allow users to extract and view data from various perspectives, \nmany times they do this in a multidimensional format which is necessary for \nunderstanding complex interrelations in the data. OLAP Examples \nAny type of Data Warehouse System is an OLAP system. The uses of the \nOLAP System are described below.  Spotify personalizes homepages with custom songs and playlists based \non user preferences.  Netflix movie recommendation system.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 8,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 129
+  },
+  {
+    "text": "Benefits of OLAP Services \n Helps in keeping consistency and performing calculation on data.  Can store planning, analysis and budgeting for business analytics within \none platform.  Efficiently handle large volumes of data, making them suitable for \nenterprise-level business applications.  Assist in applying security restrictions for data protection.  Provide a multidimensional view of data, which helps in applying \noperations on data in various ways. Drawbacks of OLAP Services \n Requires professionals to handle the data because of its complex \nmodeling procedure.  Expensive to implement and maintain in cases when datasets are large.  Data analysis occurs only after extraction and transformation, leading to \nsystem delays.  Not efficient for decision-making, as it is updated on a periodic basis. Online Transaction Processing (OLTP) \nOnline Transaction Processing, commonly known as OLTP, is a data \nprocessing approach emphasizing real-time execution of transactions. The \nmajority of OLTP systems are meant to manage numerous short atomic \noperations that keep databases in line.  To maintain transaction integrity and reliability, these systems support \nACID (Atomicity, Consistency, Isolation, Durability) properties.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 9,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 246
+  },
+  {
+    "text": " To maintain transaction integrity and reliability, these systems support \nACID (Atomicity, Consistency, Isolation, Durability) properties.  It is through this that numerous unavoidable applications run their critical \ncourses like online banking, reservation systems etc. OLTP Examples \nAn example considered for OLTP System is ATM Center a person who \nauthenticates first will receive the amount first and the condition is that the \namount to be withdrawn must be present in the ATM. The uses of the OLTP \nSystem are described below.  ATM center is an OLTP application.  OLTP handles the ACID properties during data transactions via the \napplication.  It's also used for Online banking, Online airline ticket booking, sending a \ntext message, add a book to the shopping cart.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 9,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 166
+  },
+  {
+    "text": "Benefits of OLTP Services \n Allow users to quickly read, write and delete data operations.  Support an increase in users and transactions for real-time data access.  Provide better data protection through multiple security features.  Aid in decision-making with accurate, up-to-date data.  Ensure data integrity, consistency and high availability. Difference Between OLAP and OLTP \nCategory \nOLAP \n(Online \nAnalytical \nProcessing) \nOLTP \n(Online \nTransaction Processing) \nData Source \nHistorical data from multiple \ndatabases. Current operational data. Purpose \nUsed for analysis and decision-\nmaking. Used \nfor \nday-to-day \ntransactions. Method Used \nUses a data warehouse. Uses a standard DBMS. Normalization \nTables are not normalized. Tables \nare \nnormalized \n(3NF). Query Type \nComplex, read-heavy queries \n(slow). Simple, read/write queries \n(fast). Data Volume \nLarge (TB–PB). Small (MB–GB). Update \nFrequency \nUpdated periodically in batches. Updated \nfrequently \nby \nusers.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 10,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 225
+  },
+  {
+    "text": "Category \nOLAP \n(Online \nAnalytical \nProcessing) \nOLTP \n(Online \nTransaction Processing) \nBackup \n& \nRecovery \nPeriodic backup. Continuous and rigorous \nbackup. Users \nUsed by analysts, managers and \nexecutives. Used \nby \nclerks \nand \noperational staff. Focus \nSubject-oriented \n(analysis-\nfocused). Application-oriented \n(operation-focused). Example \nSales \nforecasting, \nBusiness \nIntelligence (BI) reports  \nATM withdrawals, Online \nbookings \n4. A Multi-dimensional data model \nA Multidimensional Data Model (MDM) organizes data into multiple dimensions \nsuch as time, product, location to support fast analytical queries in data warehouses \nand OLAP systems. A multidimensional data model organizes data into a 3D \"cube\" structure, \nusing fact tables (numeric measures like sales) and dimension tables (contextual \nattributes like time, product, or location) to enable rapid, complex analysis.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 11,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 207
+  },
+  {
+    "text": "This \nmodel, essential for OLAP systems and data warehousing, facilitates faster query \nperformance for business intelligence, allowing users to view data from multiple \nperspectives (e.g., sales by product, region, and time). Common schemas \ninclude Star, Snowflake, and Fact Constellation. Key Features of the Multidimensional Data Model \n \nSupports Multi-Dimensional Analysis: Enables users to analyze data across \nseveral dimensions (e.g., sales by product, region, and time) to identify business \npatterns and trends.  \nUsed in OLAP and Data Warehousing: Forms the foundation of OLAP systems, \nwhere data is stored in multidimensional structures for rapid aggregation and \nreporting.  \nData Cubes: Represents data as cubes that allow viewing information from \ndifferent perspectives and performing complex analytical operations efficiently.  \nFacts: Numerical measures (e.g., sales, revenue). Stored in a fact table.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 11,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 197
+  },
+  {
+    "text": " \nDimensions: Descriptive attributes (e.g., product, region, customer). Stored in \ndimension tables. The fact table links to multiple dimensions to support multi-axis \nanalysis. Multidimensional Data Representation \nA multidimensional model typically uses: \n \nFact Table: Contains measures and foreign keys to dimensions.  \nDimension Tables: Contain attributes that describe context for the facts.  \nCube Representation: Organizes facts across multiple dimensions for faster \naggregation and slicing. Working on a Multidimensional Data Model \nBuilding a multidimensional data model typically involves: \n \nIdentifying Business Requirements: Determine the key questions the business \nwants to analyze (e.g., sales trends, regional performance).  \nDefining Dimensions: Identify descriptive categories such as time, product, \nlocation, or customer that will provide context for analysis.  \nDefining Facts: Select measurable values such as sales, cost, or units sold that \nwill be stored in the fact table.  \nIdentifying Hierarchies: Establish natural roll-up paths (e.g., Year → Quarter → \nMonth → Day).",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 12,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 234
+  },
+  {
+    "text": " \nIdentifying Hierarchies: Establish natural roll-up paths (e.g., Year → Quarter → \nMonth → Day).  \nDesigning the Schema: Create a star or snowflake schema linking fact and \ndimension tables.  \nBuilding Data Cubes: Organize facts and dimensions into cube structures that \nsupport slicing, dicing, drill-down, roll-up, and fast aggregation. Example: Understanding the Multidimensional Model \n1. Let us take the example of a firm. The revenue cost of a firm can be recognized on \nthe basis of different factors such as geographical location of firm's workplace, \nproducts of the firm, advertisements done, time utilized to flourish a product, etc.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 12,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 146
+  },
+  {
+    "text": "2. Let us take the example of the data of a factory which sells products per quarter in \nBangalore. The data is represented in the table given below: \n \nIn the above given presentation, the factory's sales for Bangalore are, for the time \ndimension, which is organized into quarters and the dimension of items, which is \nsorted according to the kind of item which is sold. The facts here are represented in \nrupees (in thousands). Suppose we need to add multiple cities (for e.g. Kolkata, Delhi, Mumbai) then the table \ncan be extended as: \n \nThe same data above, can also be represented in the form of three dimensions as \ngiven below:",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 13,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 140
+  },
+  {
+    "text": "5.OLAP Operations in the Multidimensional Data Model  \nOLAP (Online Analytical Processing) operations manipulate data cubes in a \nmultidimensional data model to provide varied, high-speed analytical perspectives. The core operations—Roll-up, Drill-down, Slice, Dice, and Pivot—allow users to \nsummarize, detail, filter, and rotate data, facilitating interactive analysis in data \nwarehouses and business intelligence. OLAP (Online Analytical Processing) is a software technology that enables users to \nanalyze data from multiple database systems simultaneously. It is based on a \nmultidimensional data model, where data is represented in the form of cubes, also \nknown as hyper-cubes. Each cube consists of dimensions (e.g., Location, Time, \nProduct) and measures (e.g., Sales, Profit). Note: OLAP is widely used in data warehousing and business intelligence systems to support \nanalytical queries, trend analysis, and decision-making. Key OLAP Operations \nOLAP supports five fundamental analytical operations that allow users to view data from \ndifferent perspectives and levels of detail:",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 14,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 224
+  },
+  {
+    "text": "1. Drill Down \n \n \nThe Drill Down operation provides a more detailed view of the data.  \nIt moves from a summary level to a lower level in the concept hierarchy (for \nexample, from Year -> Quarter -> Month).  \nHow it works: Moving down in the hierarchy & adding new dimensions for more \ngranularity. Example: Viewing sales data for 2024 -> Q1 -> January instead of only yearly totals. 2. Roll Up \n \n \nThe Roll Up operation is the opposite of Drill Down.  \nIt aggregates or summarizes data to provide a higher-level overview.  \nHow it works: Climbing up in the concept hierarchy & reducing the number of \ndimensions. Example: Aggregating sales data from City -> Country or from Month -> Quarter.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 15,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 166
+  },
+  {
+    "text": "3. Slice \n \n \nThe Slice operation selects a single dimension from the cube, creating a new sub-cube \nwith reduced dimensionality.  \nIt helps focus on a specific data slice for analysis. Example: Selecting Time = \"Q1\" to analyze sales across all products and regions for the first \nquarter. 4. Dice \n \n \nThe Dice operation selects data from the cube by applying filters on two or more \ndimensions to form a sub-cube.  \nThis results in a smaller cube focused on these specific dimensions. Example: Selecting: Location = \"Delhi\" or \"Kolkata\", Time = \"Q1\" or \"Q2\" & Item = \"Car\" or \n\"Bus\"",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 16,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 153
+  },
+  {
+    "text": "5. Pivot (Rotation) \n \n \nThe Pivot operation (also known as Rotation) reorients the cube to provide a different view \nof the data.  \nIt helps users visualize data from different perspectives by rotating rows and columns. Example: Swapping the Time and Location axes to compare sales by quarter across different \nregions. 6.A three tier Data warehouse architecture  \nData warehousing helps businesses make informed decisions using large datasets. The Three-Tier Architecture is widely used for its clear structure, dividing data \nprocessing into three layers for efficient access and management.  \nBottom Tier (Data Sources and Data Storage) \n \nMiddle Tier (OLAP Engine) \n \nTop Tier (Front-End Tools) \n \n \nBottom Tier \nBottom Tier is the foundation of the data warehouse, responsible for \ncollecting, processing and storing data from multiple sources. It plays a critical role in \npreparing data for analysis.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 17,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 194
+  },
+  {
+    "text": "Key Components: \n \nData Sources: Includes operational databases (OLTP systems), flat files, \nspreadsheets, external APIs, CRM/ERP systems and web logs. These are the raw \ninputs feeding into the data warehouse.  \nData Storage: Processed data is stored in a Relational Database Management \nSystem (RDBMS) or a multidimensional database designed to support structured \nquerying and analysis. ETL Process (Extract, Transform, Load) \nThis is the core function of the bottom tier: \n1. Extract: Gathers raw data from different, often incompatible sources. 2. Transform: Converts data into a consistent format, applying business rules, \ncleansing errors, handling missing values and resolving duplicates. 3. Load: Loads the transformed data into the warehouse, organizing it for fast access \nand analysis. Note: This process ensures the warehouse contains clean, reliable and business-\nready data. Common Challenges in Bottom Tier \nIntegrating data from diverse sources presents several challenges such as: \n \nData Quality: Inconsistent data can lead to errors and unreliable analytics.  \nData Compatibility: Different data formats and structures can complicate \nintegration.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 18,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 247
+  },
+  {
+    "text": " \nData Compatibility: Different data formats and structures can complicate \nintegration.  \nScalability: Handling increasing volumes of data efficiently. Middle Tier \nThe Middle Tier hosts the OLAP server, which processes complex analytical queries. It acts as a bridge between the data storage layer (bottom tier) and the user interface \n(top tier), ensuring data is quickly retrieved, aggregated and ready for reporting and \nanalysis. It is designed for high-speed analytical processing. OLAP server models \ncome in three different categories, including: \n \nROLAP (Relational OLAP):This model uses a relational database to store and \nmanage warehouse data. It is ideal for handling large data volumes as it operates \ndirectly on relational databases.  \nMOLAP (Multidimensional OLAP): This model stores data in a multidimensional \ncube. The \nstorage \nand \nretrieval \nprocesses \nare \nhighly \nefficient, \nmaking MOLAP suitable for complex analytical queries that require aggregation.  \nHOLAP (Hybrid OLAP): It is combination of relational and multidimensional online \nanalytical processing paradigms.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 18,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 239
+  },
+  {
+    "text": " \nHOLAP (Hybrid OLAP): It is combination of relational and multidimensional online \nanalytical processing paradigms. HOLAP is the ideal option for a seamless \nfunctional flow across the database systems when the repository houses both the \nrelational database management system and the multidimensional database \nmanagement system.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 18,
+    "subject": "General",
+    "chunk_index": 2,
+    "token_count": 66
+  },
+  {
+    "text": "Note: OLAP is a powerful technology for complex calculations, trend analysis and data \nmodeling. Common Challenges in Middle Tier \n \nData Latency: Delays in data availability can impact decision-making.  \nQuery Performance: Managing large volumes of data can slow down query \nperformance.  \nData Integration: Combining data from different sources with varying formats can \nbe challenging. Top Tier \nThe Top Tier in the Three-Tier Data Warehouse Architecture comprises the front-end \nclient layer, which is essential for interacting with the data stored and processed in the \nlower tiers. This layer includes a variety of business intelligence (BI) tools and \ntechniques designed to facilitate easy access and manipulation of data for reporting, \nanalysis, and decision-making. BI tools are critical components of the Top Tier, providing robust platforms through \nwhich users can query, report, and analyze data. Popular BI tools include: \n \nIBM Cognos: Offers comprehensive reporting capabilities.  \nMicrosoft BI Platform: Integrates well with existing Microsoft products, providing \na familiar interface for users.  \nSAP BW: Specializes in managing large datasets and integrating with other SAP \nproducts.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 19,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 244
+  },
+  {
+    "text": " \nSAP BW: Specializes in managing large datasets and integrating with other SAP \nproducts.  \nCrystal Reports: Known for its powerful reporting features.  \nSAS Business Intelligence: Provides advanced analytics.  Pentaho: A versatile tool for data integration and visualization. 7.Data Ware house implementation \nData warehouse implementation is the structured process of designing, building, and \ndeploying a centralized repository that integrates data from multiple sources for \nbusiness intelligence, reporting, and analysis. The key components include data \nsources (where data comes from), ETL (Extract, Transform, Load) for \nprocessing, storage for keeping structured data, metadata for data \norganization and query tools for analysis. The purpose of implementing a data warehouse is to provide organizations \nwith a unified repository of historical data, enabling efficient querying, \nreporting and data analysis. Proper implementation is crucial for \nbusinesses because it ensures the system meets the organization's needs \nfor scalability, data accuracy and performance. A well-implemented data \nwarehouse provides key benefits such as improved decision-making, \nstreamlined data access, enhanced reporting capabilities and better data \nconsistency, all of which contribute to data-driven business success.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 19,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 245
+  },
+  {
+    "text": "Steps in Data Warehouse Implementation \n1. Planning and Requirements Gathering: Understand business needs, set \nobjectives and determine hardware/software requirements. 2. Data \nModeling \nand \nDesign: Choose \nthe \nappropriate \nschema \n(e.g., Star, Snowflake) to optimize data organization and query performance. 3. ETL Process: Extract, Transform and Load: Extract, clean, transform and load \ndata, ensuring consistency and accuracy, with customized ETL tools. 4. Database Design and Architecture: Design the physical architecture, including \nstorage, indexing and optimization for efficient performance. 5. Data Warehouse Development: Create tables, views and other objects, ensuring \nscalability for future data growth. 6. Testing and Validation: Verify data accuracy and performance, ensuring the \nsystem meets requirements and resolving any discrepancies. 7. Deployment and Maintenance: Deploy the system, address issues, apply \nupdates and maintain continuous data integration.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 20,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 192
+  },
+  {
+    "text": "8.Evolution of Data Warehousing  \nThe evolution of data warehousing has progressed from rigid, on-premises systems designed \nfor simple reporting to agile, cloud-native architectures that support real-time AI and machine \nlearning. The data warehouse is a core repository that performs aggregation to collect and \ngroup data from various sources into a central integrated unit. The data from the warehouse \ncan be retrieved and analysed to generate reports or relations between the datasets of the \ndatabase which enhances the growth of many industries. Data warehouse comes under \nBusiness Intelligence. The data warehouse is designed to provide real-time information. Storage of data has evolved from simple magnetic tapes to integrated data warehouses. This \narticle will give an overview of the history of warehousing. 1. Foundations (1960s – 1980s) \nInitially, data was stored in operational systems optimized for transactions (OLTP), which \nwere not suited for complex analysis.  \nKey Concepts (1960s-1970s): The terms \"facts\" and \"dimensions\" were first defined.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 21,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 214
+  },
+  {
+    "text": " \nKey Concepts (1960s-1970s): The terms \"facts\" and \"dimensions\" were first defined. Bill \nInmon, the \"Father of Data Warehousing,\" began defining the warehouse as a subject-\noriented, integrated, non-volatile, and time-variant collection of data.  \nFirst Business Data Warehouse (1988): IBM researchers Barry Devlin and Paul Murphy \nintroduced the first \"Business Data Warehouse\" architecture to reduce the impact of \nreporting on operational systems. 2. Commercial Emergence (1990s) \nDuring this decade, data warehousing became a standard enterprise tool for Business \nIntelligence (BI).  \nMethodological Split: Two primary philosophies emerged: \no \nBill Inmon (Top-Down): Focused on a centralized, normalized repository serving the entire \nenterprise. o \nRalph Kimball (Bottom-Up): Introduced dimensional modeling (star schemas) and data \nmarts, prioritizing ease of use for business users.  \nETL Maturity: The Extract, Transform, Load (ETL) process became the standard for moving \nand cleaning data before storage. 3.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 21,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 242
+  },
+  {
+    "text": " \nETL Maturity: The Extract, Transform, Load (ETL) process became the standard for moving \nand cleaning data before storage. 3. The Big Data & MPP Era (2000s) \nExplosive growth in data volume from the internet led to new scaling techniques.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 21,
+    "subject": "General",
+    "chunk_index": 2,
+    "token_count": 63
+  },
+  {
+    "text": " \nMassively Parallel Processing (MPP): Systems like Teradata, Netezza, and Exadata \ndistributed workloads across multiple nodes, enabling warehouses to handle Terabytes of \ndata.  \nHadoop & Data Lakes: The 2005 arrival of Hadoop introduced \"Data Lakes\" to store raw, \nunstructured data (like logs and social media feeds) cheaply, though these lacked the \ngovernance of traditional warehouses. 4. The Cloud & Modern Era (2010s – Present) \nCloud technology fundamentally changed data warehouse economics and capabilities.  \nCloud Data Warehouses (CDW): Platforms like Amazon Redshift, Google BigQuery, \nand Snowflake decoupled storage from compute, allowing for on-demand scalability and \npay-as-you-go pricing.  \nELT Shift: Modern warehouses often use Extract, Load, Transform (ELT), where data is \nloaded in its raw state and transformed directly within the warehouse using its massive \ncompute power.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 22,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 207
+  },
+  {
+    "text": " \nThe Data Lakehouse: This hybrid architecture (championed by Databricks) combines the \ncost-effectiveness of a data lake with the structure and performance of a data warehouse, \nsupporting both BI and Machine Learning on a single platform.  \nAutonomous Warehousing: The latest step uses AI to automate manual tasks like \nindexing, scaling, and patching, as seen in the Oracle Autonomous Data Warehouse. 9.Merits \nData warehouses provide a centralized, high-performance repository for large volumes of \nhistorical data, enabling consistent, data-driven evaluation across an organization. Key \nmerits for evaluation include improved data quality via standardized formatting, enhanced \nbusiness intelligence through unified reporting, and faster, more accurate decision-making \nbased on integrated data. Core Strategic Merits \n \nUnified \"Single Source of Truth\": By consolidating data from disparate sources \n(CRMs, ERPs, flat files), a DW ensures all departments evaluate the same metrics, \neliminating conflicting reports.  \nHistorical Depth & Trend Analysis: Unlike operational databases that focus on \ncurrent transactions, a DW stores years of historical data.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 22,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 236
+  },
+  {
+    "text": " \nHistorical Depth & Trend Analysis: Unlike operational databases that focus on \ncurrent transactions, a DW stores years of historical data. This allows evaluators to \ntrack seasonality, long-term performance, and economic cycles.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 22,
+    "subject": "General",
+    "chunk_index": 2,
+    "token_count": 46
+  },
+  {
+    "text": " \nEnhanced Data Quality: The ETL (Extract, Transform, Load) process cleanses and \nstandardizes data before it enters the warehouse, fixing errors and removing \nduplicates to ensure evaluations are based on high-quality information.  \nHigh-Speed Analytical Performance: Data warehouses use columnar storage and \nparallel processing (MPP) to execute complex, multi-dimensional queries much \nfaster than traditional databases. Operational & Performance Merits \n \nWorkload Isolation: Analytics and heavy reporting run separately from operational systems, \nmeaning deep evaluation tasks do not slow down live customer-facing applications.  \nDecision Speed & Self-Service: Pre-modeled tables and user-friendly BI tool integrations \n(like Tableau or Power BI) allow non-technical stakeholders to perform their own evaluations \nwithout waiting for IT support.  \nSecurity & Compliance Readiness: Centralizing data allows for robust, auditable security \ncontrols, including role-based access and data masking, which are critical for evaluating \nperformance in regulated sectors like healthcare and banking.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 23,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 217
+  },
+  {
+    "text": " \nScalability: Modern cloud-based warehouses (e.g., Snowflake, Amazon Redshift, Google \nBigQuery) can elastically scale to handle petabytes of data as an organization’s evaluation \nneeds grow. Measurable Impacts \n \nOperational Efficiency: Automating daily ingestion and reporting can increase \nefficiency by up to 20% and decision speed by 30%.  \nResource Savings: Automation can reduce time spent on manual data gathering by \napproximately 70%.  \nReturn on Investment (ROI): Some industry reports indicate an average 5-year ROI \nof 112% for successful data warehouse implementations. To provide more specific merits, it would be helpful to know: \n \nThe specific industry or department (e.g., finance, retail, healthcare) you are \nevaluating.  \nThe current scale of your data (e.g., gigabytes vs. petabytes).  \nWhether you are considering an on-premises or cloud-based solution.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 23,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 208
+  },
+  {
+    "text": "These guides outline the benefits and advantages of using a data warehouse for \nenhanced data analysis and strategic decision-making: \nA data warehouse (DW) provides a structured, high-performance environment specifically \ndesigned for complex analytical evaluation rather than day-to-day transactional processing. Strategic Evaluation Merits \n \nSingle Source of Truth: Centralizes data from disparate sources (CRM, ERP, flat files) into \na unified repository. o \nEnsures all departments evaluate performance using identical metrics and definitions.  \nHistorical Performance Tracking: Stores years of historical records, allowing for \nlongitudinal analysis and trend identification. o \nSupports evaluation of seasonality, long-term growth patterns, and cyclical shifts.  \nEnhanced Data Quality: Uses ETL processes to clean, standardize, and de-duplicate data \nbefore it reaches the evaluator. o \nFixes errors and fills missing values to ensure evaluations are based on accurate, consistent \ninformation. Performance & Analytical Merits \n \nHigh-Speed Querying: Optimized for read-heavy operations, allowing evaluators to run \ncomplex multi-dimensional queries across massive datasets in seconds.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 24,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 234
+  },
+  {
+    "text": "Performance & Analytical Merits \n \nHigh-Speed Querying: Optimized for read-heavy operations, allowing evaluators to run \ncomplex multi-dimensional queries across massive datasets in seconds. o \nUses columnar storage and parallel processing to handle petabyte-scale data without \nperformance lag.  \nOperational Isolation: Analytics and evaluation tasks run separately from live operational \nsystems. o \nPrevents heavy reporting workloads from slowing down customer-facing applications.  \nSelf-Service Business Intelligence: Integrates seamlessly with BI tools \nlike Tableau or Power BI. o \nEmpowers non-technical stakeholders to build their own dashboards and perform ad-hoc \nevaluations. Compliance & Security Merits \n \nAuditable Data Trails: Maintains a complete record of when data was loaded and its \noriginal source, which is critical for regulatory audits.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 24,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 176
+  },
+  {
+    "text": " \nRole-Based Security: Allows for granular access controls, ensuring evaluators only see the \nspecific datasets relevant to their role. Core Architecture Components for Evaluation \nComponent  \nFunction in Evaluation \nData Sources \nRaw inputs from sales, marketing, and finance. Staging Area \nTemporary space for initial cleaning and standardization. DW Repository \nThe central \"brain\" where all historical, cleaned data is stored. Data Marts \nSubsets of data tailored for specific departmental evaluation (e.g., Sales Mart). OLAP Engine \nEnables \"slice and dice\" multidimensional analysis (e.g., sales by region per \n \n10.OLTP vs Data Warehousing Comparison \nWhat is Data Warehousing? Data Warehousing is a technique that gathers or collects data from different sources \ninto a central repository, or, in other words, a single, complete, and consistent store of \ndata that is obtained from different sources. It is a powerful database model that \nenhances the user's ability to analyze huge, multidimensional datasets. Allowing the \nuser to make a business decision based on facts, track quick and effective decisions, \nor provide the necessary information. What is Online-Transaction processing (OLTP) ?",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 25,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 247
+  },
+  {
+    "text": "Allowing the \nuser to make a business decision based on facts, track quick and effective decisions, \nor provide the necessary information. What is Online-Transaction processing (OLTP) ? Online-Transaction Processing is a technique used for detailed day-to-day \ntransactions of data which continuously chain on an everyday-basis. We can describe \nOLTP as a large number of short, online transactions in which there are detailed and",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 25,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 85
+  },
+  {
+    "text": "current schematics used to store data into a transaction database like Third Normal \nForm (3NF). It typically uses a traditional database that includes insertion, deletion, \nand update while also supporting query requirements. Difference Between Data Warehousing and Online-Transaction Processing \n(OLTP) \nData Warehousing DWH \nOnline transaction \nIt is technique that gathers or collect \ndata from different sources into \ncentral repository. It is technique that is used for detailed day \nto day transaction data which keep \nchaining on everyday. It is designed for decision making \nprocess. It is designed for business transaction \nprocess. It stores large amount of data or \nhistorical data. It holds current data. It used for analyzing the business. It used for running the business. In Data warehousing, the size of \ndatabase is around 100GB-2TB \nIn Online transaction processing, the size \nof data base is around 10MB-100GB. In Data warehousing, denormalized \ndata is present. In \nOnline \ntransaction \nprocessing, \nnormalized data is present.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 26,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 220
+  },
+  {
+    "text": "Data Warehousing DWH \nOnline transaction \nIt uses Query processing. It uses transaction processing \nIt is subject-oriented. It is application-oriented. In \nData \nwarehousing, \ndata \nredundancy is present. In Online transaction processing, there is \nno data redundancy. 11.Data Warehousing Issues   \nData warehousing issues center on maintaining data quality, ensuring high \nperformance with large data volumes, and managing high implementation costs. Key \nchallenges include integrating data from disparate sources, managing evolving user \nrequirements, ensuring security, and adapting to technological changes. Proper \nplanning and ongoing maintenance are crucial for success. Data warehousing involves complex processes that frequently encounter technical, \norganizational, and operational hurdles. Key issues often center on maintaining data \nintegrity while integrating diverse sources and managing rapidly growing data \nvolumes. 1. Data Quality and Accuracy \nMaintaining high-quality data is one of the most persistent challenges.  \nInconsistencies: Manual data entry and varied formats from different departments \nlead to duplicates, typos, and mismatched records.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 27,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 221
+  },
+  {
+    "text": " \nInconsistencies: Manual data entry and varied formats from different departments \nlead to duplicates, typos, and mismatched records.  \nStale Data: Traditional ETL (Extract, Transform, Load) processes often run in batches, \nleading to a \"data latency\" where information in the warehouse is hours or days behind \nreal-time events.  \nData Silos: Departments may create their own isolated data stores using different \nstandards, making it difficult to achieve a single source of truth. 2. Technical and Performance Hurdles \nAs data volume grows, the infrastructure must handle increased pressure without \nfailing.  \nScalability: Traditional on-premise warehouses often struggle to scale. Increasing \nstorage or processing power can be expensive and require significant hardware \ninvestments.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 27,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 168
+  },
+  {
+    "text": " \nQuery Performance: Complex queries involving multiple joins and aggregations can \nbecome resource-intensive, leading to slow response times for end-users.  \nHandling Unstructured Data: Most data warehouses are designed for structured \ndata (rows and columns). Managing semi-structured (JSON/XML) or unstructured \ndata (audio, video, documents) remains a significant challenge. 3. Implementation and Cost Issues \nBuilding and maintaining a warehouse is a resource-heavy endeavor.  \nHigh Initial Costs: Setup involves major investments in software licenses, hardware, \nand specialized personnel.  \nLong Timelines: Developing an enterprise-wide warehouse can take years, during \nwhich business requirements may change, rendering the original design obsolete.  \nIntegration Complexity: Mapping data from dozens of heterogeneous source \nsystems (CRM, ERP, legacy databases) into a unified schema is often the most time-\nconsuming part of implementation. 4. Security and Compliance \nCentralizing sensitive data makes the warehouse a high-value target for cyberattacks.  \nData Security: Protecting intellectual property and personally identifiable information \n(PII) requires robust encryption, masking, and access controls.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 28,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 238
+  },
+  {
+    "text": " \nData Security: Protecting intellectual property and personally identifiable information \n(PII) requires robust encryption, masking, and access controls.  \nRegulatory Compliance: Industries must adhere to strict laws like GDPR or CCPA. A poorly configured warehouse can hinder accurate reporting, leading to legal \nrepercussions and fines. 5. Organizational Challenges \nHuman and process-related issues can derail technical success.  \nUser Adoption: Non-technical users often find traditional warehouse tools too \ncomplex, leading to underutilization or total avoidance.  \nData Ownership: Departments may be reluctant to share their data, fearing a loss of \ncontrol or exposure of internal errors.  \nEvolving Requirements: Business needs shift rapidly. If the warehouse isn't \ndesigned with a flexible or agile framework, it cannot adapt quickly to new reporting \ndemands. 12.Architecture and Components",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 28,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 185
+  },
+  {
+    "text": "Data warehouse architecture is a structured framework for collecting, cleaning, and storing \ndata from diverse sources into a centralized system to support business intelligence and \nanalysis. It consists of three primary tiers: the bottom tier (data storage/staging), the middle tier \n(OLAP/processing engines), and the top tier (front-end reporting/visualization tools), ensuring data \nintegrity, high-speed queries, and actionable insights. Data warehouse architecture refers to the structured design of how data flows from various \nsource systems into a centralized data warehouse, and how it is processed, \nstored, and made accessible for analytics and reporting. At its core, this architecture defines: \nWhere the data comes from (e.g., databases, APIs, files) \nHow the data is moved and transformed (ETL or ELT processes) \nWhere the data lives (the warehouse itself) \nHow the data is consumed (via BI tools, dashboards, or applications) \nA well-designed architecture ensures: \n Consistent and accurate data across systems \n Scalable performance for complex queries \n Easy integration with modern analytics tools \n Compliance with security, governance, and data sovereignty \nrequirements \n \n1.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 29,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 243
+  },
+  {
+    "text": "Operational System: In data warehousing, an operational system is a system that \nprocesses \nan \norganization's \nday-to-day \ntransactions.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 29,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 31
+  },
+  {
+    "text": "2. Flat File System: A flat file system is a collection of files in which each file must have a \nunique \nname. 3. Metadata: The metadata contains information about other data but not the data itself, \nsuch as a message's text or an image's content. We use metadata to direct a query to \nthe \nmost \nrelevant \ndata \nsource. 4. Raw data: Raw data is a set of data that has not yet been processed and delivered from \na specific data entity to the data supplier and has not been processed by machine or \nhuman. This information is gathered from various online sources to provide detailed \ninsight \ninto \nusers' \nonline \nbehavior. 5. Summary Data: Data summary is a simple term for a brief conclusion to a large theory \nor paragraph. This is frequently the case in which analysts write the code and then \ndeclare the ultimate end by summarizing data. In data mining and processing, a data \nsummary is critical. Core Data Warehouse Components \n \nData Sources: The origin of data, including structured (databases, CRM), semi-structured \n(JSON, XML), and unstructured data.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 30,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 240
+  },
+  {
+    "text": "Core Data Warehouse Components \n \nData Sources: The origin of data, including structured (databases, CRM), semi-structured \n(JSON, XML), and unstructured data.  \nData Staging Area: A temporary, intermediate storage space where raw data is cleaned, \nvalidated, and transformed before being loaded into the central warehouse, ensuring data \nquality.  \nETL/ELT Processes: Extract, Transform, Load (ETL) or Extract, Load, Transform (ELT) tools \npull data from sources, format it, and move it into the storage system.  \nData Warehouse Storage: The central repository (or database) where processed, structured \ndata is stored, often using star or snowflake schemas.  \nData Marts: Subsets of the main data warehouse designed for specific departments (e.g., \nMarketing, Finance), offering faster access to relevant data.  \nMetadata Repository: A catalog that stores information about data structures, sources, and \ndefinitions, facilitating data management and interpretation.  \nOLAP (Online Analytical Processing) Engine: Software that enables complex queries and \nmulti-dimensional data analysis for business intelligence.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 30,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 242
+  },
+  {
+    "text": " \nOLAP (Online Analytical Processing) Engine: Software that enables complex queries and \nmulti-dimensional data analysis for business intelligence.  \nBI and Reporting Tools: Front-end applications that provide dashboards and visualization \nfor data analysis, such as Tableau or Power BI.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 30,
+    "subject": "General",
+    "chunk_index": 2,
+    "token_count": 58
+  },
+  {
+    "text": "13.Data Warehouse Characteristics  \nA data warehouse is a centralized repository for storing and managing large amounts \nof data from various sources for analysis and reporting. It is optimized for fast \nquerying and analysis, enabling organizations to make informed decisions by \nproviding a single source of truth for data. 1. Subject-Oriented \n \nA data warehouse is subject-oriented, meaning it focuses on specific themes like \nsales, healthcare, marketing or distribution, rather than day-to-day operations.  \nIt is designed to collect and organize data related to a particular topic to support \nanalysis and decision-making.  \nUnnecessary data is removed, making it easier to get clear and relevant insights \nfor that subject.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 31,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 147
+  },
+  {
+    "text": "2. Integrated \n \nIntegration in a data warehouse means combining data from different sources like \nmainframes and relational databases into a consistent and reliable format.  \nThis involves using standard naming conventions, formats and codes so that data \ncan be easily understood and analyzed.  \nIntegration ensures that all related data is unified, allowing for more accurate and \nefficient decision-making across different subject areas. 3. Time-Variant \n \nTime-variance means that data in a data warehouse is stored over different time \nperiods-such as weekly, monthly or yearly.  \nUnlike operational systems, it keeps historical data for long-term analysis.  \nOnce data is entered, it is not changed or updated, preserving the state of data at \na specific point in time.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 32,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 163
+  },
+  {
+    "text": "4. Non-Volatile \nNon-volatility means that once data is stored in a data warehouse, it is not deleted or \nupdated. Instead, new data is added over time, keeping the historical records intact. The data is read-only and refreshed at specific intervals, making it ideal for analyzing \ntrends and long-term performance. There are mainly two types of data operations in a \ndata warehouse: \n1. Data Loading: inserting bulk data from various sources. 2. Data Access: reading and analyzing the stored data. 14.Meta Data and Meta DataCatalog  \nMetadata in data warehousing is data that describes other data. It provides information \nabout the structure, meaning, origin, and usage of data stored in a data warehouse. Instead of containing actual business data, metadata acts as a guidebook that helps \nusers and systems understand how data is organized and how it should be used. For example: if a customer's purchase amount is the data, then the information about \nwhen the purchase was made, the data type, and the source system is its metadata.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 33,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 218
+  },
+  {
+    "text": "Examples of Metadata \n \nFile metadata: This includes information about a file, such as its name, size, \ntype, and creation date.  \nImage metadata: This includes information about an image, such as its \nresolution, color depth, and camera settings.  \nMusic metadata: This includes information about a piece of music, such as its \ntitle, artist, album, and genre.  \nVideo metadata: This includes information about a video, such as its length, \nresolution, and frame rate.  \nDocument metadata: This includes information about a document, such as its \nauthor, title, and creation date.  \nDatabase metadata: This includes information about a database, such as its \nstructure, tables, and fields.  \nWeb metadata: This includes information about a web page, such as its title, \nkeywords, and description. Consider a table named Sales_Fact: \nMetadata Element \nDescription \nTable Name \nSales_Fact",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 34,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 204
+  },
+  {
+    "text": "Metadata Element \nDescription \nColumn Name \nTotal_Amount \nData Type \nDECIMAL(10,2) \nSource System \nCRM System \nLoad Frequency \nDaily \n \nThis metadata explains how the actual data should be interpreted and \nmaintained. Types of Metadata in Data Warehousing \nMetadata in a data warehouse is commonly divided into three main categories: \n1. Business Metadata \nBusiness metadata describes data in business-friendly terms so that non-technical \nusers can understand it easily. Examples: \n \nMeaning of a column like Customer_ID \n \nBusiness rules for calculating \"Total Sales\" \n \nReport definitions and KPIs \n2. Technical Metadata \nTechnical metadata focuses on the physical and structural aspects of data. Examples: \n \nTable and column names \n \nData types (VARCHAR, INT, DATE, etc.) \n \nIndexes, partitions, and storage locations \n3. Operational Metadata \nOperational metadata tracks process-related information about how data moves and \nchanges.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 35,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 207
+  },
+  {
+    "text": "Examples: \n \nData load timestamps \n \nETL job status (success/failure) \n \nError logs and refresh cycles \nHow Metadata is Used in Data Warehousing \nMetadata supports various warehouse operations, such as: \n \nETL processes: mapping source fields to target warehouse fields \n \nQuery optimization: helping database engines choose efficient execution plans \n \nData lineage tracking: identifying source systems and transformations \n \nImpact analysis: understanding how changes affect downstream reports \nThis makes system maintenance and troubleshooting much easier. Metadata Repository \nA metadata repository is a centralized storage where all metadata is stored and \nmanaged. It acts as a reference point for: \n \nETL tools \n \nBI tools \n \nData analysts and engineers \n \nData governance teams \nThis repository ensures consistency and standardization across the data warehouse. What is a Data Catalog? A data catalog acts like a digital librarian for an organization's data, providing a \ncentral location to organize and manage metadata. Modern data catalogs often use \nAI and machine learning to automate the process of discovering, ingesting, and \nenriching metadata.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 36,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 241
+  },
+  {
+    "text": "Modern data catalogs often use \nAI and machine learning to automate the process of discovering, ingesting, and \nenriching metadata. Key features and benefits of a data catalog: \n \nData Discovery and Search: Streamlines the process of finding relevant datasets \nusing search and filtering capabilities based on metadata.  \nContext and Understanding: Provides critical business context, such as business \ndefinitions, tags, and documentation, so users can understand if data is fit for their \nneeds.  \nData Lineage: Visualizes how data flows across systems, which is crucial for tracing \nerrors, understanding dependencies, and ensuring regulatory compliance.  \nCollaboration: Offers features like user comments, ratings, and expert contacts to \nfacilitate collaboration among data consumers and data stewards.  \nGovernance and Compliance: Helps enforce data governance policies and track \nwho accessed or modified files to ensure data is used securely and responsibly.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 36,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 192
+  },
+  {
+    "text": "Data and AI catalogs go beyond the metadata management formats of file and model \nformats to manage data storage, sharing and querying reliably at scale. A good data catalog should make it easy for you to: \n \nFind your data \n \nUse the best engines and tools without vendor lock-in \n \nControl who can access which data \n \nCollaborate within and across organizations \n \nEnsure compliance with relevant regulations \nCore Comparison \nAspect  \nMetadata \nMetadata Catalog (Data Catalog) \nNature \nInformation. It is the \"content\" (e.g., table \nnames, owner, creation date). Application. It is the \"container\" or tool \nthat hosts the content. Analogy \nThe details on a book's cover (author, title, \ngenre). The library’s digital search system or \nphysical card catalog. Function \nProvides context, meaning, and traceability to \nraw data. Enables discovery, search, governance, \nand collaboration. Scope \nGranular and specific to a single data asset. Holistic and enterprise-wide; unifies many \nsources. 15.Data Warehouse Security",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 37,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 230
+  },
+  {
+    "text": "Data \nwarehouse \nsecurity \ninvolves implementing \nmulti-layered \nprotections—\nencryption, robust access controls, and monitoring—to ensure the confidentiality, \nintegrity, and availability of aggregated, sensitive data. It requires protecting data at \nrest and in transit, securing user access, and auditing activity to prevent unauthorized \naccess, breaches, and data leaks. Mechanisms for Guaranteeing Data Warehouse Security \n \nAccess Controls: Setting up access restrictions to make sure that only people \nwith permission can access the data warehouse In accordance with their work \nresponsibilities within a company, this also entails allowing appropriate levels of \naccess and assigning user accounts and passwords to specific people.  \nAuthentication and Authorization: Implementing authorization mechanisms to \nensure that users only have access to the data they need to carry out their job \nfunctions and implementing authentication mechanisms such as two-factor \nauthentication, which we have in our email, biometric authentication, and single \nsign-on to ensure that users are who they claim to be.  \nEncryption: Protecting data from illegal access by encrypting it both in transport \nand at rest To safeguard data, this calls for the use of encryption methods and \nsecure key management procedures.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 38,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 249
+  },
+  {
+    "text": " \nAuditing: Establishing auditing procedures to keep an eye on user behavior and \nspot any security breaches This entails recording user activity and inspecting it to \nlook for irregularities or suspect conduct.  \nData Masking: Adopting a data masking approach, which protects sensitive data \nby replacing it with fake or obfuscated data that has the same format and properties \nbut hides the actual data, in data warehousing Data masking helps firms retain the \nconfidentiality of sensitive data and adhere to rules, making it a crucial part of data \nsecurity in data warehousing.  \nData Loss Prevention: Data backup and recovery procedures are implemented \nalong with security measures like firewalls and intrusion detection and prevention \nsystems to prevent unwanted access, alteration, or destruction of data.  \nRegulatory Compliance: Since there are numerous rules, regulations, and \nstandards relating to data security and privacy that apply to different businesses, \nregulatory compliance is a crucial component of data warehousing. This entails \nputting in place the proper security processes and controls to safeguard data and \nguarantee legal compliance.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 38,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 229
+  },
+  {
+    "text": "This entails \nputting in place the proper security processes and controls to safeguard data and \nguarantee legal compliance. The Health Insurance Portability and Accountability \nAct (HIPAA), the Payment Card Industry Data Security Standard (PCI-DSS), the \nGeneral Data Protection Regulation (GDPR), the Sarbanes-Oxley Act (SOX), and \nothers are a few instances of regulatory compliance requirements in data \nwarehousing.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 38,
+    "subject": "General",
+    "chunk_index": 2,
+    "token_count": 88
+  },
+  {
+    "text": "Advantages of Security in Data Warehousing \n1. By guaranteeing the confidentiality and integrity of customers' data, strong data \nsecurity will improve consumer trust. 2. In hopes of enhancing decision-making, access restrictions, and audit trails can \nassist assure the quality and integrity of data. 3. A business may reduce the enormous financial implications of security breaches, \nincluding such attorney costs and reputation damage, by using more efficient \nsecurity solutions. Disadvantages of Security in Data Warehousing \n1. Data warehousing procedures may become more complicated as a result of the \nimplementation of security measures, making it more challenging to administer and \nmaintain them. 2. Access restrictions caused by security measures like access controls can slow \ndown corporate agility and decision-making processes. 3. Access limitations brought on by security precautions like access controls might \nimpede business agility and decision-making. Core Security Layers  \nA robust security strategy for data warehouses is typically built across several \ndefensive layers:  \n \nIdentity and Access Management (IAM):",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 39,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 212
+  },
+  {
+    "text": " \nRole-Based Access Control (RBAC): Assign permissions based on job \nfunctions (e.g., analysts vs. developers).  \nGranular Permissions: Use Row-Level Security (RLS) and Column-\nLevel Security (CLS) to restrict access to specific sensitive fields, such as \nPII or financial details, even if a user has access to the broader table.  \nMulti-Factor Authentication (MFA): Mandatory for administrative or \nprivileged accounts to prevent unauthorized entry via stolen credentials.  \nData Protection & Privacy: \no Encryption: Data must be encrypted at rest (in the warehouse and \nbackups) and in transit (between sources and the warehouse) using strong \nalgorithms like AES-256. o Data Masking: Obfuscate sensitive data for non-production use or restricted \nanalysts so they can query patterns without seeing raw identifiers like credit \ncard numbers. o Anonymization: Remove or modify personal identifiers to protect privacy \nwhile maintaining data utility for analytics.  \nInfrastructure & Network Security: \no Firewalls & VPNs: Use virtual private clouds (VPCs) and firewalls to restrict \ntraffic to trusted IP ranges and secure communication channels.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 40,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 247
+  },
+  {
+    "text": "o Data Loss Prevention (DLP): Deploy automated tools to monitor for \nunusual data movements, such as large exports or transfers to unauthorized \nexternal emails.  \nMonitoring and Auditing: \no Continuous Logging: Capture every access attempt, query, and \nadministrative change. These logs should be stored in a secure, centralized \nlocation. o Anomaly Detection: Use Security Information and Event Management \n(SIEM) tools or AI to flag suspicious activities, like a user suddenly querying \nmassive volumes of data at unusual hours. 16. Data Staging",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 40,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 116
+  },
+  {
+    "text": "Data staging is the process of preparing and transforming raw data from various \nsources into a format that can be easily used for analysis or reporting. It involves \nseveral steps to clean, validate, and organize data before it is loaded into a data \nwarehouse or another database for further use. Why Stage Data? Staging data—whether in an external or internal staging area—plays a crucial role in \nthe data pipeline for several important reasons. Here are the key benefits of staging \ndata, including: \n \nImproved data quality.  \nData transformation and standardization.  \nPerformance optimization.  \nError handling and data quality checks.  \nFlexibility and scalability.  \nFaster data loading.  \nEasier data access.  \nSeparation of raw and processed data.  \nData governance and compliance. A Data Staging Area (also known as a data conduit or data clearing house) \nis a temporary storage space where raw data from multiple sources is \ncollected, cleaned, transformed and prepared before being loaded into the \ndata warehouse.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 41,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 225
+  },
+  {
+    "text": "It acts as a bridge between source systems (like ERP, \nCRM, or flat files) and the data warehouse, ensuring data quality, schema \nalignment and processing efficiency.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 41,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 35
+  },
+  {
+    "text": "Importance of Data Staging Area \n \nData Consolidation: Collects data from multiple sources into one place, making \nit easier to process uniformly.  \nEnhanced Data Quality: Cleanses data through deduplication, error correction \nand standardization before loading.  \nSchema Alignment: Maps and converts different source formats into a unified \nschema for the warehouse.  \nImproved Performance: Handles heavy transformations outside the warehouse \nto ensure faster analytical queries.  \nTemporary Storage for Batches: Stores incoming data temporarily so it can be \nsynchronized and loaded in organized batches.  \nBetter Data Security: Provides a controlled zone where sensitive data \nundergoes ETL with proper security measures.  \nAudit & Traceability: Maintains logs of all ETL steps, enabling full data lineage \nand easier troubleshooting. Role of the Data Staging Area in a Data Warehouse",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 42,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 186
+  },
+  {
+    "text": "Role \nPurpose \nTemporary Storage \nHolds raw data from multiple sources until ready for \nbatch loading. Data Cleaning \nRemoves duplicates, nulls, and inconsistencies. Data Transformation \nApplies business rules, conversions, and reformatting. Performance \nOptimization \nFrees up the warehouse for fast query performance. Synchronization \nAligns data from sources with different refresh cycles. Security & Compliance \nEnsures data safety through encryption and access \ncontrols. Audit & \nTroubleshooting \nTracks data lineage and logs every processing step. Real-World Examples of Data Staging Usage \n \nRetail Industry: Retailers consolidate data from POS systems, e-commerce sites \nand supply chains. The DSA cleans and formats this data for accurate sales and \ninventory analysis.  \nHealthcare Sector: Hospitals collect data from EHRs, labs and billing systems. The DSA ensures data consistency and HIPAA compliance before analysis.  \nFinancial Services: Financial institutions integrate transaction, CRM and market \ndata via the DSA for fraud detection, risk analysis, and regulatory reporting.  \nTelecommunications: Telecom operators process vast call records and billing \ndata in the DSA for performance optimization and customer pattern analysis.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 43,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 248
+  },
+  {
+    "text": " \nTelecommunications: Telecom operators process vast call records and billing \ndata in the DSA for performance optimization and customer pattern analysis.  \nManufacturing: Manufacturers use the DSA to gather and clean production, \nsupply chain and quality control data to improve efficiency and reduce costs. Key Steps in the Data Staging Process \n1. Data Extraction: Gather raw data from databases, APIs, or files.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 43,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 84
+  },
+  {
+    "text": "2. Data Profiling: Assess data structure and identify inconsistencies. 3. Data Cleansing: Remove errors, duplicates and formatting issues. 4. Data Transformation: Apply business rules, type conversions, and aggregation. 5. Data Validation: Ensure completeness and correctness of data. 6. Data Integration: Merge data from multiple systems into unified form. 7. Temporal Storage: Temporarily store processed data before loading. 8. Data Loading: Transfer the cleaned and transformed data into the warehouse. Popular tools for the data staging area \nTool \nKey Features \nApache NiFi \nAutomates data flows and real-time streaming. Apache Kafka \nHigh-speed, fault-tolerant data streaming \nplatform. AWS Glue \nServerless ETL tool with automation and \ncataloging. Google Cloud Dataflow \nUnified batch and stream data processing \nservice. Pentaho Data Integration \n(PDI) \nOpen-source ETL tool for complex \ntransformations.",
+    "source": "DW&DM-Unit-1.pdf",
+    "page": 44,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 194
+  },
+  {
+    "text": "DATA WAREHOUSING AND DATA MINING \nUNIT-III \n1. Association Analysis: Problem Definition  \nAssociation analysis is most widely used to discover hidden patterns in large \ndata sets. These hidden and uncovered relationships can be represented in the \nform of association rules or sets of frequent items. The role of identifying \ninteresting associations in large databases is correlation analysis. There can be \ntwo types of these enthralling relationships: frequent itemsets or rules of the \nassociation. Frequent object sets are a collection of objects that mostly take \nplace together. Association rules are the method of viewing fascinating \nrelationships. The rules of association show that a close bond occurs between \ntwo or more objects. Association rules are a fundamental concept used to find relationships, correlations or \npatterns within large sets of data items. They describe how often itemsets occur \ntogether in transactions and express implications of the form: \nX→Y \n \nWhere X and Y are disjoint sets of items. This rule suggests that when items \nin X appear, items in Y tend to appear as well. Association rules originated from \nmarket basket analysis and help retailers and analysts understand customer behavior \nby discovering item associations in transaction data.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 1,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 242
+  },
+  {
+    "text": "Association rules originated from \nmarket basket analysis and help retailers and analysts understand customer behavior \nby discovering item associations in transaction data. For example, a rule stating \n \n{Bread,Butter}→{Milk} \n \nindicates that customers who buy bread and butter also tend to buy milk.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 1,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 60
+  },
+  {
+    "text": "Key Components \n Antecedent (X): The \"if\" part representing one or more items found in \ntransactions.  Consequent (Y): The \"then\" part, representing the items likely to be \npurchased when antecedent items appear. Rules are evaluated based on metrics that quantify their strength and \nusefulness: \nRule Evaluation Metrics \n1. Support: Fraction of transactions containing the itemsets in both X and Y. Support(X→Y)= Number of transactions with (X∪Y) /  /   Total number of transactions  \n \nSupport measures how frequently the combination appears in the data. 2. Confidence: Probability that transactions with X also include Y. Confidence(X→Y)= Support(X∪Y) / Support(X)  \nConfidence measures the reliability of the inference. 3. Lift: The ratio of observed support to that expected if X and Y were \nindependent. Lift(X→Y)= Confidence(X→Y) /  /Support(Y) \n \n Lift > 1 implies a positive association — items occur together more than \nexpected.  Lift = 1 implies independence.  Lift < 1 implies a negative association.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 245
+  },
+  {
+    "text": " Lift = 1 implies independence.  Lift < 1 implies a negative association. Example Transaction Data \nTransaction ID \nItems \n1 \nBread, Milk",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 35
+  },
+  {
+    "text": "Transaction ID \nItems \n2 \nBread, Diaper, Beer, Eggs \n3 \nMilk, Diaper, Beer, Coke \n4 \nBread, Milk, Diaper, Beer \n5 \nBread, Milk, Diaper, Coke \nConsidering the rule: \n{Milk,Diaper}→{Beer} \nCalculations: \n \nSupport =2/5=0.4 \n \nConfidence = 2/3≈0.67 \n \nLift = 0.4/0.6×0.6=1.11(positive association) \n \n \n2.Frequent Item set Generation \nFrequent itemset generation in data mining is the process of identifying sets of items \n(itemsets) that appear together in a transactional dataset with a frequency above a \ndefined minimum support threshold. It is the foundational step in association rule \nmining (e.g., market basket analysis),, such as identifying that customers who buy milk \nand bread also frequently buy butter.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 3,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 213
+  },
+  {
+    "text": "Key Concepts \n \nItemset: A collection of one or more items (e.g., {milk, bread}).  \nSupport Count (Absolute Support): The number of transactions that contain a \nspecific itemset.  \nSupport (Relative Support): The proportion of total transactions that contain an \nitemset, often expressed as a percentage.  \nFrequent Itemset: An itemset whose support is greater than or equal to a minimum \nsupport threshold set by the user.  \nApriori Property (Downward Closure): A crucial principle stating that if an itemset \nis frequent, then all of its subsets must also be frequent. Conversely, if an itemset is \ninfrequent, all of its supersets will also be infrequent, which is used for efficient \npruning of the search space. Main Algorithms \n \nSeveral algorithms have been developed for efficient frequent itemset generation:  \n \nApriori Algorithm: This is a classic, level-wise (breadth-first) algorithm.  \nFP-Growth Algorithm: This method uses a different strategy that avoids the costly \ncandidate generation process.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 4,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 236
+  },
+  {
+    "text": " \nFP-Growth Algorithm: This method uses a different strategy that avoids the costly \ncandidate generation process. Frequent Pattern Tree (FP-tree) \n \nEclat Algorithm: This algorithm explores the itemset lattice using a depth-first search \napproach and a vertical data format (storing transaction IDs for each item). It finds frequent \nitemsets by intersecting the transaction ID lists of different items, a process which can be \nmemory efficient for certain datasets. Applications \nThis technique is widely used for: \n \nMarket Basket Analysis: Discovering which products customers buy together to \noptimize shelf placement or discounts.  \nRecommendation Systems: Suggesting items to users based on co-occurrence \npatterns in their history.  \nBioinformatics: Finding co-occurring genetic markers or protein sequences.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 4,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 172
+  },
+  {
+    "text": "3..Rule generation \n4..Association Rule Mining \n5..Mining Single Dimensions \nMining Single-Dimensional Association Rules is a concept in Data Mining that focuses on \ndiscovering relationships using only one dimension (attribute) of a dataset. 1. What is Single-Dimensional Association Rule Mining? In single-dimensional mining, the association rules involve only one attribute or predicate \n(usually the item purchased). Example rule: \nBuys(Bread) → Buys(Milk) \nHere, the dimension is “Buys”. Both items use the same predicate Buys, so it is single-dimensional. 2. Example Transaction Dataset \nTransaction ID \nItems Bought \nT1 \nBread, Milk \nT2 \nBread, Butter \nT3 \nMilk, Butter \nT4 \nBread, Milk \nT5 \nBread, Milk, Butter \nFrom this dataset we may get rules such as: \n \nBread → Milk \n \nMilk → Butter \n \nBread → Butter \nAll rules involve only one dimension: purchasing items.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 5,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 220
+  },
+  {
+    "text": "3. Representation \nSingle-dimensional rules are usually written as: \nX⇒Y  \nExample: \nBread⇒Milk  \n \nMeaning: \nCustomers who buy Bread tend to buy Milk. These rules are typically discovered using algorithms such as: \n \nApriori Algorithm \n \nFP-Growth Algorithm \n \n4. Measures Used \nLike other association rules, single-dimensional mining uses: \n1. Support \nFrequency of occurrence of itemsets in the database. 2. Confidence \nProbability that Y appears when X appears. 3. Lift (optional) \nMeasures the strength of association. These measures are widely used in Market Basket Analysis. 5. Characteristics \nSingle-dimensional association rules: \n \nUse only one predicate or attribute \n \nItems are usually Boolean (present or absent) \n \nCommon in transaction databases \n \nEasy to compute compared to multi-dimensional rules",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 6,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 192
+  },
+  {
+    "text": "6. Example Rule with Values \nBread → Milk \n \nSupport = 40% \n \nConfidence = 70% \nInterpretation: \n \n40% of all transactions contain both bread and milk.  \n70% of customers who buy bread also buy milk. 7. Difference from Multi-Dimensional Mining \nFeature \nSingle-Dimensional \nMulti-Dimensional \nNumber of attributes One \nMultiple \nExample \nBread → Milk \nAge(20–30) → Buys(Beer) \nComplexity \nSimpler \nMore complex \n \n6.Boolean Association Rules from Transactional Databases \nBoolean Association Rules from Transactional Databases are a key concept in Data \nMining used to discover relationships between items in large datasets such as supermarket \ntransactions. 1. What is a Transactional Database? A transactional database stores data where each record represents a transaction containing \na set of items. Example: \nTransaction ID \nItems Purchased \nT1 \nBread, Milk \nT2 \nBread, Diaper, Beer, Eggs \nT3 \nMilk, Diaper, Beer, Cola",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 7,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 235
+  },
+  {
+    "text": "Transaction ID \nItems Purchased \nT4 \nBread, Milk, Diaper, Beer \nT5 \nBread, Milk, Diaper, Cola \nEach transaction contains items that are either present or absent, which makes them \nBoolean (True/False). 2. What are Boolean Association Rules? Boolean association rules describe relationships between items where the items are binary \n(0/1 or present/absent). A rule is written as: \nX⇒Y \nMeaning: \nIf itemset X appears in a transaction, itemset Y is likely to also appear. Example: \nBread → Milk \nInterpretation: \nCustomers who buy bread are likely to also buy milk. 3. Key Measures of Association Rules \n1. Support \nSupport measures how frequently an itemset appears in the database. Support(X⇒Y)=P(X∪Y)  \nExample: \nIf Bread & Milk appear in 3 out of 5 transactions: \nSupport=3/5=60% \n \n2. Confidence",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 8,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 215
+  },
+  {
+    "text": "Confidence measures how often Y appears when X appears. Confidence(X⇒Y)= Support(X∪Y) / Support(X) \nExample: \nIf Bread appears in 4 transactions and Bread + Milk appears in 3: \nConfidence=3/4=75%  \n \n3. Lift (Optional but useful) \nLift measures how much more often X and Y occur together than expected if they were \nindependent. Lift=Confidence(X⇒Y)Support(Y)Lift = \\frac{Confidence(X \\Rightarrow \nY)}{Support(Y)}Lift=Support(Y)Confidence(X⇒Y)  \n \n4. Example Rule \nFrom a market basket dataset: \nDiaper → Beer \n \nSupport = 60% \n \nConfidence = 75% \nInterpretation: \n60% of transactions contain both diapers and beer, and 75% of people who buy diapers \nalso buy beer. This classic example is often used in Market Basket Analysis. 5.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 9,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 215
+  },
+  {
+    "text": "This classic example is often used in Market Basket Analysis. 5. Algorithms Used \nTo generate Boolean association rules from transactional data, common algorithms include: \n \nApriori Algorithm \n \nFP-Growth Algorithm \n \nECLAT Algorithm \nThese algorithms find frequent itemsets and then generate rules that satisfy minimum \nsupport and confidence thresholds.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 9,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 75
+  },
+  {
+    "text": "6. Applications \nBoolean association rules are used in: \n \n🛒 Retail market basket analysis \n \n🎬 Recommendation systems \n \n🌐 Web usage mining \n \n💳 Fraud detection \n \n📦 Inventory management \n \n7..Multilevel Association Rule. Data mining is the process of extracting hidden patterns from large data sets. One of the fundamental techniques in data mining is association rule mining. To identify relationships between items in a dataset, Association rule mining is \nused. These relationships can then be used to make predictions about future \noccurrences of those items. Multilevel Association Rule mining is an extension of Association Rule mining. Multilevel Association Rule mining is a powerful tool that can be used to \ndiscover patterns and trends. Association Rule in data mining \nAssociation rule mining is used to discover relationships between items in a \ndataset. An association rule is a statement of the form \"If A, then B,\" where A \nand B are sets of items. The strength of an association rule is measured using \ntwo measures: support and confidence.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 10,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 227
+  },
+  {
+    "text": "The strength of an association rule is measured using \ntwo measures: support and confidence. Support measures the frequency of \nthe occurrence of the items in the rule, and confidence measures the reliability \nof the rule. Apriori algorithm is a popular algorithm for mining association rules. It is an \niterative algorithm that works by generating candidate itemsets and pruning \nthose that do not meet the support and confidence thresholds.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 10,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 83
+  },
+  {
+    "text": "Multilevel Association Rule mining is a technique that extends Association Rule \nmining to discover relationships between items at different levels of \ngranularity. Multilevel Association Rule mining can be classified into two types: \nmulti-dimensional Association Rule and multi-level Association Rule. Multi-dimensional Association Rule mining \nThis is used to find relationships between items in different dimensions of a \ndataset. For example, in a sales dataset, multi-dimensional Association Rule \nmining can be used to find relationships between products, regions, and time. Multi-level Association Rule mining \nThis is used to find relationships between items at different levels of \ngranularity. For example, in a retail dataset, multi-level Association Rule \nmining can be used to find relationships between individual items and \ncategories of items. Needs of Multidimensional Rule \nMultidimensional rule mining is important because data at lower levels may \nnot exhibit any meaningful patterns, yet it can contain valuable insights. The \ngoal is to find such hidden information within and across levels of abstraction. Algorithms for Multilevel Association Rule Mining \nThere are several algorithms for Multilevel Association Rule mining, including \npartition-based, agglomerative, and hybrid approaches.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 11,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 240
+  },
+  {
+    "text": "Algorithms for Multilevel Association Rule Mining \nThere are several algorithms for Multilevel Association Rule mining, including \npartition-based, agglomerative, and hybrid approaches. Partition-based algorithms divide the data into partitions based on some \ncriteria, such as the level of granularity, and then mine Association Rules within \neach partition. Agglomerative algorithms start with the smallest itemsets and \nthen gradually merge them into larger itemsets, until a set of rules is obtained. Hybrid algorithms combine the strengths of partition-based and agglomerative \napproaches. Approaches to Multilevel Association rule mining \nMultilevel Association Rule mining has different approaches to finding \nrelationships between items at different levels of granularity. There are three \napproaches: Uniform Support, Reduced Support, and Group-based Support. These are explained as follows below in brief. Uniform Support (using uniform minimum support for all \nlevels)",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 11,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 181
+  },
+  {
+    "text": "where only one minimum support threshold is used for all levels. This approach \nis simple but may miss meaningful associations at low levels. Reduced Support (using reduced minimum support at \nlower levels) \nwhere the minimum support threshold is lowered at lower levels to avoid \nmissing important associations. This approach uses different search \ntechniques, such as Level-by-Level independence and Level-cross separating \nby single item or K-itemset. Group-based Support (using item or group based support) \nwhere the user or expert sets the support and confidence threshold based on \na specific group or product category. For example, if an expert wants to study the purchase patterns of laptops and \nclothes in the non-electronic category, a low support threshold can be set for \nthis group to give attention to these items' purchase patterns. Applications of Multilevel Association Rule in data mining \nThese are some application as follows \nRetail Sales Analysis \nMultilevel Association Rule mining helps retailers gain insights into customer \nbuying behavior and preferences, optimize product placement and pricing, and \nimprove supply chain management.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 12,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 218
+  },
+  {
+    "text": "Healthcare Management \nMultilevel Association Rule mining helps healthcare providers identify patterns \nin patient behavior, diagnose diseases, identify high-risk patients, and \noptimize treatment plans. Fraud Detection \nMultilevel Association Rule mining helps companies identify fraudulent \npatterns, detect anomalies, and prevent fraud in various industries such as \nfinance, insurance, and telecommunications. Web Usage Mining",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 12,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 72
+  },
+  {
+    "text": "Multilevel Association Rule mining helps web-based companies gain insights \ninto user preferences, optimize website design and layout, and personalize \ncontent for individual users by analyzing data at different levels of abstraction. Social Network Analysis \nMultilevel Association Rule mining helps social network providers identify \ninfluential users, detect communities, and optimize network structure and \ndesign by analyzing social network data at different levels of abstraction. Challenges in Multilevel Association Rule Mining \nMultilevel Association Rule mining poses several challenges, including high \ndimensionality, large data set size, and scalability issues. High dimensionality \nIt is the problem of dealing with data sets that have a large number of \nattributes. Large data set size \nIt is the problem of dealing with data sets that have a large number of records. Scalability \nIt is the problem of dealing with data sets that are too large to fit into memory.",
+    "source": "DW&DM-Unit-3.pdf",
+    "page": 13,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 180
+  },
+  {
+    "text": "Unit-IV - Classification and Prediction \n1. What is Classification? Classification in data mining is a supervised learning approach used to assign data \npoints into predefined classes based on their features. By analysing labelled historical \ndata, classification algorithms learn patterns and relationships that enable them to \ncategorize new, unseen data accurately. Let's see some key characteristics about \nclassification: \n \nPredicts discrete, categorical outputs.  \nLearns from labelled datasets using supervised learning.  \nIdentifies meaningful relationships among features.  \nSupports various algorithms based on rules, probability, distance or boundaries.  \nUsed widely for automation, risk detection and pattern recognition. Types of Classification Techniques \nClassification techniques can be divided into: \n \n \n1. Binary Classification: Binary classification assigns data into one of two possible \ncategories. It is commonly used when the outcome is a simple yes/no or true/false \ndecision.  \nUsed for tasks like spam vs. not spam, disease vs. no disease.  \nSimpler decision boundaries and lower computational complexity.  \nCan utilize algorithms like Logistic Regression, SVM or Decision Trees. 2.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 1,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 239
+  },
+  {
+    "text": "not spam, disease vs. no disease.  \nSimpler decision boundaries and lower computational complexity.  \nCan utilize algorithms like Logistic Regression, SVM or Decision Trees. 2. Multi-Class Classification: Multi-class classification deals with problems where \nthe output can belong to more than two categories, requiring more complex decision \nboundaries.  \nUsed in image classification, sentiment classification or product categorization.  \nModels use strategies like One-vs-One or One-vs-All for separation.  \nAlgorithms: Random Forests, Neural Networks, Multiclass SVMs.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 1,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 121
+  },
+  {
+    "text": "Building a Classification Model \nThere are several steps involved in building a classification model, let's understand \nthem: \n \n1. Data Preparation \n \nCollect, clean and transform raw data into usable form.  \nHandle missing values, outliers and convert categorical data as needed. 2. Feature Selection \n \nIdentify the most relevant variables influencing the outcome.  \nUse correlation, feature importance scores or domain knowledge. 3. Prepare Train & Test Data \n \nSplit dataset into training and testing portions.  \nHelps evaluate generalization and avoid overfitting. 4. Model Selection \n \nChoose an appropriate algorithm based on data type and complexity.  \nExamples: Decision Tree, SVM, Logistic Regression, KNN. 5. Model Training \n \nFeed training data to the algorithm to learn relationships.  \nParameters adjust to minimize prediction error. 6. Model Evaluation \n \nEvaluate using the test dataset with metrics like accuracy, precision, recall and F1-\nscore.  \nUse confusion matrix or ROC curve for deeper assessment. 7. Model Tuning \n \nAdjust hyperparameters or switch algorithms to improve accuracy.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 249
+  },
+  {
+    "text": " \nUse confusion matrix or ROC curve for deeper assessment. 7. Model Tuning \n \nAdjust hyperparameters or switch algorithms to improve accuracy.  \nTechniques include grid search and cross-validation. 8. Model Deployment \n \nImplement the finalized model into production systems.  \nMonitor performance over time to detect data drift.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 2,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 74
+  },
+  {
+    "text": "Categorization of Classification \nThere are different types of classification algorithms based on their approach, \ncomplexity and performance. Here are some common categorizations of classification \nin data mining: \n1. Logistic Regression Classification: A statistical model that estimates the \nprobability of class membership using a logistic function. It is efficient, interpretable, \nand commonly used for binary classification. 2. Decision Tree Classification: Uses a hierarchical tree structure where internal \nnodes represent tests on features and leaves represent class labels. Offers high \ninterpretability and works well for mixed data types. 3. Random Forest Classification: An ensemble method that builds multiple decision \ntrees and combines their outputs. It improves accuracy, handles overfitting well and \nworks effectively with large feature sets. 4. Naive Bayes Classification: Based on Bayes’ theorem, it calculates the probability \nof each class given the input data. Known for simplicity, speed and effectiveness with \nlarge datasets. 5. Rule-Based Classification: Generates if–then rules derived from patterns in the \ndataset. Provides ease of interpretation and transparency in decision-making. 6.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 3,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 227
+  },
+  {
+    "text": "5. Rule-Based Classification: Generates if–then rules derived from patterns in the \ndataset. Provides ease of interpretation and transparency in decision-making. 6. Nearest Neighbor (KNN) Classification: k-NN classification classifies new data \nby comparing it to the k closest existing data points. Effective for non-linear problems \nbut sensitive to noise and scaling. 7. Neural Network Classification: Uses interconnected layers of neurons to learn \ncomplex, non-linear relationships. Highly accurate but computationally intensive. 8. Ensemble-Based Classification: Combines multiple weak learners to form a \nstrong predictive model. Improves accuracy, reduces overfitting and handles complex \npatterns. 9. Support Vector Machine (SVM) Classification: Finds an optimal boundary \n(hyperplane) that separates classes. Works well in high-dimensional spaces and \nsupports kernel-based non-linear decision-making.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 3,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 177
+  },
+  {
+    "text": "Classification vs Regression \nLet's compare the classification and regression in Data Mining: \nAspect \nClassification \nRegression \nOutput Type \nCategorical labels \nContinuous numeric values \nExample \nSpam \ndetection, \ndisease \nclassification \nPrice prediction, temperature \nforecasting \nDecision Basis \nClass boundaries \nBest-fit line or curve \nEvaluation \nMetrics \nAccuracy, precision, recall, \nF1-score \nMAE, MSE, RMSE \nUse Cases \nDiscrete decision-making \nNumeric forecasting and trend \nestimation \nApplications \n \nFraud Detection: Used to classify transactions as fraudulent or legitimate in \nbanking systems.  \nMedical Diagnosis: Helps identify diseases based on patient symptoms and \nmedical reports.  \nEmail & Spam Filtering: Automatically categorizes emails into spam or non-spam.  \nCustomer Segmentation: Classifies users into behavioural groups to improve \nmarketing strategies.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 4,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 185
+  },
+  {
+    "text": " \nSentiment & Text Classification: Identifies sentiment polarity in reviews, \ncomments and social media posts. Advantages \n \nHigh Predictive Accuracy: Performs effectively across numerous real-world \ndomains.  \nSupports Many Algorithms: Flexibility to choose based on data type and \ncomplexity.  \nHandles Large Datasets: Modern algorithms scale efficiently with big data.  \nOffers Interpretability: Decision Trees and Rule-based systems provide \ntransparent decisions.  \nAutomates Complex Decision Processes: Useful for repetitive, high-volume \nclassification tasks. Limitations \n \nRequires Labelled Data: Obtaining quality labels is often expensive and time-\nconsuming.  \nSensitive to Data Quality: Noise, imbalance and missing values reduce accuracy.  \nOverfitting Risk: Complex models may memorize training data instead of \ngeneralizing.  \nBias Toward Majority Class: Imbalanced data leads to poor minority-class \nprediction.  \nHigh Computational Costs: Neural networks and SVM can be intensive in training \nand tuning. 2. Classification by Decision Tree Induction \nDecision Tree Induction is a supervised learning technique in data mining used for \nclassification (and sometimes regression).",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 5,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 250
+  },
+  {
+    "text": "2. Classification by Decision Tree Induction \nDecision Tree Induction is a supervised learning technique in data mining used for \nclassification (and sometimes regression). It builds a model in the form of a tree structure to \npredict the class of a target variable based on input features. 🌳 What is a Decision Tree? A decision tree is a flowchart-like structure where: \n \nEach internal node represents a test on an attribute  \n \nEach branch represents the outcome of that test  \n \nEach leaf node represents a class label (decision)  \n📊 How Classification Works \nIn classification: \n \nThe dataset has input attributes (features) and a target class  \n \nThe tree splits data step-by-step based on feature values  \n \nThe goal is to separate classes as clearly as possible",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 5,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 170
+  },
+  {
+    "text": "⚙️ Decision Tree Induction Process \nThe following decision tree is for the concept buy_computer that indicates \nwhether a customer at a company is likely to buy a computer or not. Each \ninternal node represents a test on an attribute. Each leaf node represents a \nclass. The benefits of having a decision tree are as follows − \n \nIt does not require any domain knowledge.  \nIt is easy to comprehend.  \nThe learning and classification steps of a decision tree are simple and fast. 1. Start with the full dataset \n \nAll training data is placed at the root  \n2. Select the best attribute to split \n \nChoose the attribute that best separates the data into classes  \n \nCommon measures:  \no \nInformation Gain  \no \nGain Ratio  \no \nGini Index  \n3. Split the dataset \n \nDivide data into subsets based on attribute values  \n4. Repeat recursively \n \nApply the same process to each subset",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 6,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 208
+  },
+  {
+    "text": "5. Stop when: \n \nAll samples belong to the same class  \n \nNo more attributes remain  \n \nData is too small (stopping condition)  \n📐 Key Splitting Measures \n🔹 1. Information Gain (ID3 Algorithm) \nBased on entropy (measure of impurity) \n \nHigh information gain → better split  \n \nFormula concept:  \no \nGain = Entropy(before split) − Entropy(after split)  \n🔹 2. Gain Ratio (C4.5 Algorithm) \n \nImproves Information Gain by reducing bias toward many-value attributes  \n🔹 3.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 7,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 140
+  },
+  {
+    "text": "Gain Ratio (C4.5 Algorithm) \n \nImproves Information Gain by reducing bias toward many-value attributes  \n🔹 3. Gini Index (CART Algorithm) \n \nMeasures impurity:  \no \nLower Gini → better split  \n🌱 Popular Algorithms \n \nID3 (Iterative Dichotomiser 3)  \n \nC4.5 (successor of ID3)  \n \nCART (Classification and Regression Trees)  \n✂️ Tree Pruning \nTo avoid overfitting: \nTypes: \n \nPre-pruning: Stop early while building the tree  \n \nPost-pruning: Remove branches after the tree is built  \n✅ Advantages \n \nEasy to understand and interpret  \n \nHandles both numerical and categorical data  \n \nRequires little data preprocessing  \n❌ Disadvantages \n \nCan overfit easily  \n \nSensitive to noisy data",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 7,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 206
+  },
+  {
+    "text": " \nMay become complex (large trees)  \n📌 Example (Simple) \nSuppose we classify whether to play cricket: \nWeather Humidity Play \nSunny \nHigh \nNo \nRainy \nNormal \nYes \nDecision tree: \n \nRoot: Weather  \no \nSunny → No  \no \nRainy → Yes  \n🧠 Summary \nDecision Tree Induction: \n \nBuilds a tree by recursively splitting data  \n \nUses statistical measures to choose best splits  \n \nProduces easy-to-interpret classification rules  \n3.Bayesian Classification \nBayes Classification is a Supervised machine learning approach for classification. It \nworks on a probabilistic method based on Bayes Theorem. It predicts the data point \nlabel or assigns the class on the basis of heuristic and statistical data.  \nThe above image denotes the relationship representation in a Bayes Classifier.  \nThe nodes represent features or variables in a Bayesian network.  \nThese can either be discrete or continuous.  \nThe links, on the other hand, denote the relationships between the nodes, along \nwith a probability distribution over variables. Key Features of Bayes Classifier \n1.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 8,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 249
+  },
+  {
+    "text": " \nThe links, on the other hand, denote the relationships between the nodes, along \nwith a probability distribution over variables. Key Features of Bayes Classifier \n1. Probabilistic Model: Based on conditional probability using Bayes' Theorem.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 8,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 52
+  },
+  {
+    "text": "2. Supervised Learning Approach: Requires labeled training data. 3. Classifies Using Prior and Likelihood: Combines prior class probabilities with \ndata likelihood. 4. Model Interpretability: Easy to interpret due to mathematical formulation. 5. Scalability: Efficient for larger datasets. 6. Handles Continuous/Discrete Features: Works with both types depending on \nimplementation. Mathematical Representation - Bayes Theorem \nBayes’ Theorem is a fundamental theorem in probability and machine learning that \ndescribes how to update the probability of an event when given new evidence. It is \nused as the basis of Bayes Classification.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 9,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 129
+  },
+  {
+    "text": "It is \nused as the basis of Bayes Classification. P(A∣B)=P(B∣A)⋅P(A)P(B)P(A∣B)=P(B)P(B∣A)⋅P(A) \nWhere: \n P(C∣X)P(C∣X): Posterior probability of class C given data X \n P(X∣C)P(X∣C): Likelihood of data X given class C \n P(C)P(C): Prior probability of class C \n P(X)P(X): Marginal probability of data X \nAssumptions in Bayes Classification \n1. Well-defined prior probabilities. 2. Correct conditional probability distributions. 3. Independence of training and test samples. 4. Stationarity of features over time. 5. Classes are mutually exclusive and exhaustive. Bayes Classification Workflow -Terminologies \n \nPrior: Initial belief before evidence (e.g., % of spam emails). It is an Input to the \nClassifier.  \nLikelihood: Evidence corresponding to a particular given class (e.g., frequency \nof “free” in spam).",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 9,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 249
+  },
+  {
+    "text": "It is an Input to the \nClassifier.  \nLikelihood: Evidence corresponding to a particular given class (e.g., frequency \nof “free” in spam). It is an Input to the Classifier.  \nPosterior: Updated belief after evidence. It is an Output from the Classifier.  \nEvidence: Overall probability of observed features. The above image demonstrates that Likelihood, Data, and Prior probabilities are \nused as Input to the model. Bayes Theorem is used as the mathematical principle. The resultant is Posterior Distribution.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 9,
+    "subject": "General",
+    "chunk_index": 2,
+    "token_count": 113
+  },
+  {
+    "text": "Steps Involved in Classification \n1. Collect Data: From training set, extract features X and target C. 2. Estimate Priors: Calculate P(C) for each class. 3. Estimate Likelihoods: For every feature X, compute P(X∣C). 4. Calculate Posterior: Use Bayes’ Theorem to get P(C∣X). 5. Predict Class: Assign the class with the highest posterior probability. It \ncalculates the posterior probability for each class and assigns the class with the \nhighest probability. Bayes Classifier vs. Naive Bayes Classifier \nBayes Classifier is often misunderstood by its simplified version Naive Bayes \nClassifier. Here are some differences between them: \n \nFactor \nBayes Classifier \nNaive Bayes Classifier \nFeature \nDependency \nHandles well \nAssumes independence between features \nComplexity \nComplex \nSimple and Fast \nInterpretability \nClear \nProbabilities \nInterpretable and Simplified logic \nScalability \nLess scalable \nHighly scalable \nExample \nBayesian \nNetworks \nNaive Bayes Classifier, Gaussian, Bernoulli, or \nMultinomial Classification \nWhy is it called a Bayes Classifier?",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 10,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 247
+  },
+  {
+    "text": "It's based on Bayes’ Theorem, named after Thomas Bayes, an 18th-century \nstatistician. The theorem helps update beliefs based on evidence, which is the core \nidea of classification here: updating class probability based on observed data. Applications of Bayes Classification \n \nStock Market Prediction: Analyzes time-varying relationships and Financial \nindicators.  \nFraud Detection and Credit Risk Modelling: Analyzes Fraud probability based \non transaction patterns, contextual data, timestamps, etc.  \nMedical Diagnosis: Predicts the chances or probability of occurrence of a \ndisease based on medical history.  \nEmail Spam Detection and Phishing: Classifies emails and messages as \n\"Spam\" or \"Not Spam\" based on previous probabilities.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 10,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 163
+  },
+  {
+    "text": "Advantages of Bayes Classifier \n1. Handles small data well. 2. Can incorporate domain knowledge. 3. Probabilistic output allows threshold tuning. 4. Can model non-linear decision boundaries. 5. Adaptable to both discrete and continuous data. Disadvantages of Bayes Classifier \n1. Computationally expensive for high-dimensional data. 2. Complex to model feature dependencies. 3. Requires large data to estimate joint distributions. 4. Not scalable for many features or classes. 5. Poor performance if assumptions are violated. 4.Predictive analysis  \nPredictive analysis in data mining is the process of using historical data, statistical \nalgorithms, and machine learning techniques to identify the likelihood of future \noutcomes. It builds models to forecast trends and behaviors, enabling proactive \ndecision-making across industries like finance, marketing, and healthcare  \nCategories of Predictive Analysis: \nPredictive analysis is divided into two main categories:  \n \nDescriptive analysis: Descriptive analysis is the process of summarizing and \ndescribing data, including identifying patterns and relationships.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 11,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 226
+  },
+  {
+    "text": " \nPrescriptive analysis: Prescriptive analysis, on the other hand, is the process of \nusing data and algorithms to make predictions and recommendations about future \noutcomes. Prediction Analysis \n \nPurpose: To anticipate future trends, understand potential risks, and move from \nknowing what happened to what is likely to happen.  \nTechniques: Common methods include regression analysis (linear/logistic), decision \ntrees, neural networks, and time series analysis.  \nProcess: \n Involves data collection, cleaning, and preparation, followed by applying models to \nidentify patterns and generate predictions on new data.  \nTypes of Problems: \no Classification: Predicts categorical labels (e.g., spam/not spam). o Regression: Predicts continuous numerical values (e.g., forecasting sales revenue \nor house prices).",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 11,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 171
+  },
+  {
+    "text": " \nApplications: Fraud detection, customer churn prediction, medical diagnosis, and \nmarket demand forecasting. Predictive Modeling \n1. Define Project: Clearly identify the problem and business objectives. 2. Data Preparation: Gather, clean, and organize relevant data, addressing missing \nvalues. 3. Model Selection: Choose appropriate algorithms (e.g., decision trees, neural \nnetworks). 4. Training & Testing: Split data into training and test sets to evaluate performance. 5. Deployment & Monitoring: Apply the model to new data and update it as needed. Common Applications \nPredictive analysis is used across nearly every industry to optimize operations and \nreduce risk:  \n \nIndustry  \nCommon Use Cases \nFinance \nCredit scoring, fraud detection, and stock market trend analysis. Retail \nDemand forecasting, personalized product recommendations, and inventory \nmanagement. Healthcare \nPredicting disease outbreaks, identifying high-risk patients, and optimizing treatment \nplans. Manufacturing \nPredictive maintenance (forecasting equipment failure before it happens) and supply \nchain optimization. Marketing \nTargeted advertising, customer segmentation, and churn prevention.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 12,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 223
+  },
+  {
+    "text": "Manufacturing \nPredictive maintenance (forecasting equipment failure before it happens) and supply \nchain optimization. Marketing \nTargeted advertising, customer segmentation, and churn prevention. Challenges \n \nData Quality: Models are only as good as the data fed into them; inaccurate or \nbiased data leads to poor predictions.  \nOverfitting: This occurs when a model is too complex and fits the training data too \nclosely, making it fail when applied to new, real-world data.  \nPrivacy and Ethics: Using personal data can lead to legal restrictions or unintended \ndiscrimination (e.g., redlining in lending)",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 12,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 132
+  },
+  {
+    "text": "5. KNN- Classification of Back Propagation \nKNN (K-Nearest Neighbors) and Backpropagation are two distinct and separate \nclassification algorithms used in data mining and machine learning, with fundamental \ndifferences in how they learn and classify data. They are not the same process, but in \nsome advanced systems, they can be used in conjunction. K-Nearest Neighbors (KNN) \nKNN is a simple, non-parametric, lazy learning algorithm used for both classification \nand regression.  \nLearning Process: KNN does not have an explicit training phase where it learns a \nmodel. Instead, it simply stores the entire training dataset.  \nClassification Process: To classify a new data point, the algorithm: \n1. Calculates the distance (commonly Euclidean distance) between the new point and \nall points in the training set. 2. Selects the k  nearest neighbors based on the calculated distances. 3. Assigns the new data point to the class that is most frequent among its k  neighbors \n(majority vote). K-Nearest Neighbor (KNN) is a simple and widely used machine learning \ntechnique for classification and regression tasks.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 13,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 250
+  },
+  {
+    "text": "K-Nearest Neighbor (KNN) is a simple and widely used machine learning \ntechnique for classification and regression tasks. It works by identifying \nthe K closest data points to a given input and making predictions based on \nthe majority class or average value of those neighbors.  Classifies data based on similarity with nearby data points",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 13,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 68
+  },
+  {
+    "text": " Uses distance metrics like Euclidean distance to find nearest neighbors \n Since KNN makes no assumptions about the underlying data \ndistribution, it makes it a non-parametric and instance-based learning \nmethod. 6.Backpropagation \nBackpropagation is a key algorithm used to train artificial neural networks.  \nLearning Process: It is an iterative learning algorithm that adjusts the weights and \nbiases of a neural network to minimize the difference (error) between its predicted \noutput and the actual target output.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 14,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 105
+  },
+  {
+    "text": " \nClassification Process: The process involves: \n1. Forward Pass: Input data is fed through the network to generate an output \nprediction. 2. Error Calculation: The error is calculated using a loss function (e.g., mean-squared \nerror). 3. Backward Pass (Backpropagation): The error is propagated backward through the \nnetwork, and the gradient of the error is calculated with respect to the weights using \nthe chain rule. 4. Weight Update: Weights are adjusted iteratively using optimization techniques like \ngradient descent to reduce the error for future predictions. Back Propagation plays a critical role in how neural networks improve over \ntime. Here's why: \n1. Efficient Weight Update: It computes the gradient of the loss function \nwith respect to each weight using the chain rule making it possible to \nupdate weights efficiently. 2. Scalability: The Back Propagation algorithm scales well to networks \nwith multiple layers and complex architectures making deep learning \nfeasible. 3. Automated Learning: With Back Propagation the learning process \nbecomes automated and the model can adjust itself to optimize its \nperformance.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 15,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 233
+  },
+  {
+    "text": "Key Differences \n \nFeature  \nKNN (K-Nearest Neighbors) \nBackpropagation (in Neural Networks) \nModel \nInstance-based (stores all data) \nWeight-based (learns a model) \nLearning \nType \nLazy learner (no training phase) \nEager learner (has a distinct training phase) \nMechanism \nDistance metrics and majority voting \nGradient descent and error propagation \nComputation \nComputation occurs at the time of \nclassification \nComputation occurs primarily during the \ntraining phase \n7.Prediction \nPrediction in data mining is the process of identifying patterns in historical data to forecast \nfuture outcomes or unknown values. It is primarily divided into Classification (predicting \ncategorical labels like \"Yes/No\") and Regression (predicting continuous numerical \nvalues like \"Price\") \nThe following are the most common algorithms used for predictive tasks in data mining: \n \nRegression Analysis: Used to model the relationship between variables to predict \nnumerical outcomes. o \nLinear Regression: Fits a straight line to data to predict a continuous value (e.g., predicting \nhouse prices based on square footage). o \nLogistic Regression: Used for binary classification, such as detecting email spam.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 16,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 247
+  },
+  {
+    "text": "o \nLogistic Regression: Used for binary classification, such as detecting email spam.  \nDecision Trees: Uses a tree-like structure of branches and nodes to reach a prediction. o \nAlgorithms like CART (Classification and Regression Trees) or ID3 use measures \nlike Entropy and Information Gain to find the best data splits.  \nEnsemble Methods: Combine multiple models to improve accuracy. o \nRandom Forest: An ensemble of many decision trees that reduces overfitting by averaging \nresults. o \nXGBoost: A high-performance \"Gradient Boosting\" algorithm often used for complex tabular \ndata.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 16,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 127
+  },
+  {
+    "text": " \nNeural Networks (Artificial Neural Networks): Modeled after the human brain, these are \neffective for recognizing complex patterns in unstructured data like images or voice.  \nNaive Bayes: A fast probabilistic classifier based on Bayes' Theorem, commonly used \nfor customer sentiment analysis or risk assessments.  \nK-Nearest Neighbors (k-NN): Predicts values based on the \"similarity\" or proximity of data \npoints in the training set. The Prediction Process \nMaking a prediction generally follows these steps:  \n1. Data Preparation: Cleaning \"noisy\" data, handling missing values, and normalizing data so \ndifferent variables can be compared fairly. 2. Model Construction (Learning): Feeding a \"training set\" of historical data into an algorithm \nto build a predictive model. 3. Model Usage (Testing): Applying the model to a \"test set\" to check its accuracy (how well \nit predicts known outcomes). 4. Deployment: Once accuracy is acceptable, the model is used to predict results for new, \nunseen data.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 17,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 228
+  },
+  {
+    "text": "4. Deployment: Once accuracy is acceptable, the model is used to predict results for new, \nunseen data. Key Differences Between Tasks \nFeature  \nClassification \nRegression (Prediction) \nOutput Type \nCategorical / Discrete (e.g., Yes/No) \nContinuous / Numerical (e.g., $150.00) \nModel Name \nClassifier \nPredictor \nExample \nCategorizing loan applicants as \nsafe/risky \nPredicting annual expenditures of a \ncustomer \nPrimary \nMethod \nDecision Trees, Naive Bayes \nLinear/Multiple Regression \n \nCommon Applications",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 17,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 118
+  },
+  {
+    "text": "Industry  \nPrediction Use Case \nFinance \nStock price forecasting, credit risk assessment, and fraud detection. Marketing \nPredicting customer spend, churn (leaving a service), or response to a campaign. Healthcare \nDiagnosing diseases (e.g., diabetes) or predicting patient readmission rates. Education \nIdentifying students at risk of failing or predicting exam performance. 8. Classifier accuracy \nClassifier accuracy in data mining is a metric used to evaluate a model's performance by \nmeasuring the proportion of its correct predictions out of the total number of predictions made. It is \nthe most commonly used metric for assessing a classifier's overall \"correctness,\" particularly \nwhen dealing with balanced datasets. Formula and Calculation \nAccuracy is derived from a confusion matrix, which tracks four possible outcomes \nfor predictions:  \n \nTrue Positives (TP): Correctly predicted positive cases.  \nTrue Negatives (TN): Correctly predicted negative cases.  \nFalse Positives (FP): Negatives incorrectly predicted as positive (Type I error).  \nFalse Negatives (FN): Positives incorrectly predicted as negative (Type II error).",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 18,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 231
+  },
+  {
+    "text": " \nFalse Positives (FP): Negatives incorrectly predicted as positive (Type I error).  \nFalse Negatives (FN): Positives incorrectly predicted as negative (Type II error). The standard mathematical formula is: \n \nTechniques for Evaluation \nSince evaluating a model on the same data used to train it (resubstitution error) \nleads to overly optimistic and biased results, several techniques are used to get a \nrealistic accuracy estimate:  \n \n \nHoldout Method: Randomly splits the data into two independent sets: a training set \n(typically 2/3) and a test set (1/3).",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 18,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 131
+  },
+  {
+    "text": " \nK-Fold Cross-Validation: Partitions data into k equal subsets. The model is trained \nand tested k times, each time using a different subset for testing and the rest for \ntraining. The final accuracy is the average of these k iterations.  \nBootstrapping: A resampling technique that creates multiple training sets by \nsampling with replacement. It is particularly useful for small datasets. Limitations and When Accuracy Is Misleading \nWhile simple to interpret, accuracy is often an insufficient or even deceptive metric in \nspecific scenarios:  \n \nClass Imbalance: In datasets where one class is rare (e.g., fraud detection or \ncancer diagnosis), a model that simply predicts the majority class every time will \nshow high accuracy despite being useless.  \nCost of Errors: Accuracy treats all misclassifications equally. In real-world \napplications, a False Negative (missing a disease) might be far more costly than \na False Positive (false alarm). Alternative Metrics \nTo overcome these limitations, data analysts often use more specialized metrics:  \n \nPrecision: How many of the predicted positives were actually positive (focuses on \navoiding false alarms).",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 19,
+    "subject": "General",
+    "chunk_index": 0,
+    "token_count": 242
+  },
+  {
+    "text": " \nRecall (Sensitivity): How many of the actual positives were correctly identified \n(focuses on avoiding misses).  \nF1-Score: The harmonic mean of precision and recall, providing a balanced \nmeasure for imbalanced datasets.  \nMatthews Correlation Coefficient (MCC): A more robust metric that uses all four \nconfusion matrix categories and is less sensitive to class distribution.",
+    "source": "DW&DM-Unit-4.pdf",
+    "page": 19,
+    "subject": "General",
+    "chunk_index": 1,
+    "token_count": 86
   }
 ]
